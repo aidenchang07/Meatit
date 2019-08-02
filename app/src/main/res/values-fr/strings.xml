@@ -1,0 +1,636 @@
+<resources>
+    <string name="app_name">Meat°it</string>
+
+    <string name="facebook_app_id">1635312639839389</string>
+    <string name="fb_login_protocol_scheme">fb1635312639839389</string>
+    <!-- other -->
+    <string name="ver_company_mark">© Mastrad 2019</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth is not supported</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="connecting_probe">Connecting probe ...</string>
+    <string name="fail_email_addr">Not a valid e-mail address</string>
+    <string name="no_mastrad_technical_manual">Can\'t find Mastrad technical manual</string>
+    <string name="no_connective_probe">There is no connective probe, please connect one probe</string>
+    <string name="ble_not_enable">Bluetooth is not enable, please turn on bluetooth</string>
+    <string name="login_not_find">Not a valid account, Please check again</string>
+    <string name="login_not_find_server">Not a valid customer account or password, Please check again</string>
+    <string name="login_turn_on_network">Please turn on network</string>
+    <string name="login_password_err">Password is wrong</string>
+    <string name="login_facebook_create_fail">Facebook account add fail:</string>
+    <string name="login_facebook_create_success">Facebook account add success</string>
+    <string name="login_facebook_account_exist">Cette adresse mail est déjà associé à un compte.</string>
+    <string name="login_add_to_db_fail">Add to database fail</string>
+    <string name="photo_save_to">Photo is saved to:</string>
+    <string name="photo_save_fail">Photo save error</string>
+    <string name="photo_share_using">Please choice app:</string>
+    <string name="favorite_food_choice_fail">"Don't select probe or probe is cooking now"</string>
+    <string name="ing">ing...</string>
+    <string name="probe_delete">Supprimer</string>
+    <string name="fail_create_account">Impossible de créer un compte</string>
+
+        <!-- Create data err -->
+        <string name="create_err_not_agree_cgd">Veuillez accepter les CGU</string>
+        <string name="create_err_pwd_not_match">Le mot de passe ne correspond pas</string>
+        <string name="create_err_field_empty">Certains champs sont vides</string>
+        <string name="create_err_not_valid_email">L’adresse email n’est pas valide</string>
+        <string name="create_err_pwd_less_6">Le mot de passe doit faire au moins 6 caractères</string>
+
+    <!-- lack: p9 -->
+    <!-- P1 -->
+    <string name="login_title">Ma sonde connectée</string>
+    <string name="login_password">Mot de passe</string>
+    <string name="login_forgot_pwdQ">Mot de passe oublié ?</string>
+    <string name="login_login">CONNEXION</string>
+    <string name="login_new_account">Nouveau compte</string>
+    <string name="login_new_create">CRÉÉR</string>
+    <string name="login_facebook">Ou connectez-vous avec</string>
+    <string name="login_email">Email</string>
+    <string name="login_create_my_account">CRÉÉR</string>
+
+
+    <!-- P2 -->
+    <string name="login_last_name">Nom</string>
+    <string name="login_first_name">Prénom</string>
+    <string name="login_password_confirmation">Confirmation mot de passe</string>
+    <string name="login_receive_info">Je souhaite recevoir des informations et actualités de la marque Mastrad</string>
+    <string name="login_accept_terms">J\'accepte les conditions générales d\'utilisation</string>
+    <string name="login_accept_terms_link">conditions générales d\'utilisation</string>
+    <string name="login_create_account">CRÉER MON COMPTE</string>
+
+    <!-- P3 -->
+    <string name="login_forgot_pwd">Mot de passe oublié </string>
+    <string name="login_send">ENVOYER</string>
+
+    <!-- P4, v2:1-2-->
+    <string name="introduce_1_top">GUIDE DE DÉMARRAGE RAPIDE</string>
+    <string name="introduce_1_middle">Activez votre sonde meat°it en plaçant brièvement la partie noire de la sonde dans la partie centrale de la station de chargement.\nRetirez-la, elle est activée.</string>
+        <!-- v2: no use -->
+    <string name="introduce_1_down">Lancez l’application meat°it en vous\nassurant que le Bluetooth&#174; est allumé</string>
+
+    <!-- P5, v2:1-3 -->
+    <string name="introduce_2_top">GUIDE DE DÉMARRAGE RAPIDE</string>
+    <string name="introduce_2_middle">Sélectionnez votre sonde\nafin de programmer votre cuisson.</string>
+    <string name="introduce_2_down">Sélectionnez votre appareil de cuisson, le type d’aliment, la coupe et la cuisson désirée puis validez.</string>
+
+    <!-- P6 -->
+    <string name="introduce_3_top">COMMENT INSERER VOTRE SONDE ?</string>
+    <string name="introduce_3_middle">Insérez "<b>"intégralement"</b>" la partie métallique de votre sonde dans la partie la plus épaisse de la viande\nLa partie noire, en céramique, de votre sonde ne doit pas être recouverte par la viande.</string>
+    <string name="introduce_3_down">L\'aliment doit être d\'une épaisseur minimum de 20 mm.</string>
+    <string name="introduce_3_buttonOK">"   OK   "</string>
+
+    <!-- P7, v2: 1-6 -->
+    <string name="introduce_4_top">COMMENT RETIRER VOTRE SONDE?</string>
+    <!-- v2: update: translate line 20 -->
+    <string name="introduce_4_top2">Attention, à la fin de la cuisson, votre sonde est très chaude. Utilisez toujours votre clé d’extraction et tout autre protection adéquate pour la retirer.</string>
+    <string name="introduce_4_middle">Utilisez la clé située sous la station de\nchargement afin de retirer votre sonde.</string>
+    <string name="introduce_4_down">Retirez facilement votre sonde.</string>
+    <string name="introduce_4_gotit">"    J’AI COMPRIS    "</string>
+    <string name="introduce_4_noShow">Ne plus me remontrer</string>
+
+    <!-- P8, v2: 3-2 -->
+    <string name="trouble_title">AUCUNE SONDE DÉTECTÉE</string>
+    <!-- P8, v2: ln 22,23 -->
+    <string name="trouble_middle">Je m’assure que le Bluetooth&#174; \nde mon téléphone est activé.</string>
+    <string name="trouble_down">Je réactive ma sonde.\nJe la recharge éventuellement.</string>
+    <string name="trouble_button">" RAFRAICHIR "</string>
+
+    <!-- p10 -->
+    <string name="cook_teach_title">INSERTION DE LA SONDE</string>
+    <string name="cook_teach_teach1">Insérez "<b>"intégralement"</b>" la partie métallique\nde votre sonde dans la partie la plus épaisse de la viande\nLa partie noire, en céramique, de votre sonde ne doit pas être recouverte par la viande.</string>
+    <string name="cook_teach_teach2">L\'aliment doit être d\'une épaisseur minimum de 20 mm.</string>
+    <string name="cook_teach_OK">OK</string>
+
+    <!-- p11 -->
+    <string name="cook_internal_temp">TEMP.\nINTERNE</string>
+    <string name="cook_target_temp">TEMP.\nCIBLE</string>
+    <string name="cook_internal_temp2">I N T E R N E</string>
+    <string name="cook_target_temp2">C I B L E</string>
+    <string name="cook_timer">Minuteur</string>
+
+    <!-- p12 -->
+    <string name="cook_ready">C\'EST PRÊT</string>
+    <string name="cook_overcooking">SURCUISSON</string>
+
+    <!-- p13 -->
+    <string name="cook_photo_meat">Viande</string>
+    <string name="cook_photo_doneness">Cuisson</string>
+    <string name="cook_photo_internal_temp">Temp interne</string>
+    <string name="cook_photo_cooking_time">Temps de caisson</string>
+    <string name="cook_photo_made_on">Réalisé le </string>
+
+    <!-- p14 v2: 11-1 -->
+    <string name="slide_menu_program">Programmer ma sonde</string>
+    <string name="slide_menu_monitor">Contrôler mes cuissons</string>
+    <string name="slide_menu_cooking">Mes cuissons</string>
+    <!-- v2: ln 45 -->
+    <string name="slide_menu_recipe">Recettes</string>
+    <string name="slide_menu_timer">Minuteur</string>
+    <string name="slide_menu_settings">Réglages</string>
+    <string name="slide_menu_help">Aide</string>
+
+    <!-- p15 -->
+    <string name="count_stopwatch">CHRONOMÈTRE</string>
+    <string name="count_timer">MINUTEUR</string>
+    <string name="count_reset">RÉINITIALISER</string>
+    <string name="count_hours">heures</string>
+    <string name="count_minute">minutes</string>
+    <string name="count_second">secondes</string>
+
+    <!-- p16 -->
+    <string name="cook_list_title">Mes cuissons</string>
+    <string name="cook_list_favorite">Mes favoris</string>
+    <string name="cook_list_history">Mon historique</string>
+    <string name="cook_favorite">Favoris</string>    <!-- for v2 -->
+    <!-- p17 in p16-->
+
+    <!-- p18 -->
+    <string name="history_title">Mon historique</string>
+    <string name="history_meat">Aliment:</string>
+    <string name="history_doneness">Cuisson:</string>
+    <string name="history_internal_temp">Temp interne:</string>
+    <string name="history_cook_time">Temp de cuisson:</string>
+    <string name="history_made_on">Réalisé le:</string>
+
+    <!-- p19, p20 -->
+    <string name="setting_title">Réglages</string>
+    <string name="setting_vibrate_mode">Vibreur</string>
+    <string name="setting_ringtone">Sonnerie</string>
+    <string name="setting_pre_alert">Pré-alerte</string>
+    <string name="setting_units">Unité</string>
+    <string name="setting_about">A propos</string>
+    <string name="setting_logout">Déconnexion</string>
+    <string name="setting_keep_live">Conserver l\'écran toujours allumé</string>
+    <string name="setting_keep_live1">Conserver l\'écran\ntoujours allumé</string>
+
+        <!--V2 add v2: 11-1 -->
+        <string name="setting_hide_all_tutorials">Masquer tous les tutoriels</string>
+        <string name="setting_authorize_access_as">Authorize access as a background process</string>
+        <string name="setting_connection_wifi">Connection Wi-Fi</string>
+
+        <!--V2 v2: 11-1  -->
+        <string name="setting_ringtone_detail">Sonnerie</string>
+        <string name="setting_vibrate_detail">Active les vibrations en plus des sons.</string>
+        <string name="setting_pre_alert_detail">Vous avertit lorsque il reste environ 5 minutes.</string>
+        <string name="setting_keep_live_detail">Maintient l’écran toujours allumé. Attention cette option utilise beaucoup de batterie. Nous vous recommandons de brancher votre appareil pour les cuissons longues.</string>
+        <string name="setting_hide_all_tutorials_detail">Masque TOUS les tutoriels.</string>
+        <string name="setting_authorize_access_as_detail">Allow use of the app as a background process.\nIn this way you can follow the cooking process while using other apps.\nThis will take the form of a permanent upper banner on your screen where the remaining time and cooking speed will be displayed.</string>
+
+    <!-- p21 -->
+    <string name="about_title">A propos</string>
+    <string name="about_app_version">Version application</string>
+    <string name="about_firmware_ver">Version ﬁrmware</string>
+    <string name="about_website">Site internet</string>
+
+    <!-- p21 -->
+    <string name="help_title">Aide</string>
+    <string name="help_connect_device">Connecter ma sonde</string>
+    <string name="help_instruct_manual">Notice</string>
+    <string name="help_faq">FAQ</string>
+    <string name="help_remark">Une remarque ?</string>
+    <string name="help_customer_service">Service client</string>
+
+    <string name="help_remark_name">Nom 1</string>
+    <string name="help_remark_email">Email</string>
+    <string name="help_remark_telephone">téléphone</string>
+
+    <string name="help_remark_info">Une suggestion d’amélioration ? une remarque ? une envie pour le futur ?\n\nmeat°it est une aventure commune, nous sommes à l’écoute !</string>
+    <string name="help_service_info">Décrivez-nous votre problème, nous vous répondrons dans les 48H.</string>
+    <string name="help_send">ENVOYER</string>
+    <string name="help_send_feedback">Merci pour votre message !\n\nNous vous répondrons dans les plus brefs délais.\n\n-\n\nL’équipe meat°it</string>
+
+    <!-- food -->
+    <string name="food_beef">Boeuf</string>
+    <string name="food_veal">Veau</string>
+    <string name="food_lamb">Agneau</string>
+    <string name="food_pork">Porc</string>
+    <string name="food_chicken">Poulet</string>
+    <string name="food_turkey">Dinde</string>
+    <string name="food_duck">Canard</string>
+    <string name="food_fish">Poisson</string>
+    <string name="food_custom">Personnalisée</string>
+
+    <string name="food_fire_rare">Bleu</string>
+    <string name="food_fire_middle_rare">Saignant</string>
+    <string name="food_fire_medium">Moyen</string>
+    <string name="food_fire_medium_well">A point</string>
+    <string name="food_fire_well_done">Bien cuit</string>
+    <string name="food_fire_personalized">Personnalisé</string>
+
+    <string name="food_fire_semi_cooked">Mi-cuit</string>
+    <string name="food_fire_cooked">Cuit</string>
+    <string name="food_fire_pink">Rosé</string>
+    <string name="food_fire_medium_to_well">A point</string>
+    <string name="food_fire_pearly_fish">Nacré</string>
+    <string name="food_fire_well_done_fish">Bien cuit</string>
+
+    <string name="food_fire_ideal_temp">La température idéal</string>
+
+
+    <string name="food_fire_rare_low_case">bleu</string>
+    <string name="food_fire_middle_low_case">saignant</string>
+    <string name="food_fire_medium_low_case">à point</string>
+    <string name="food_fire_well_done_low_case">bien cuit</string>
+
+    <!-- p26, v2: 3-1 -->
+    <string name="probe_detect1_top">Recherche\nen cours ...</string>
+    <!-- v2: update: translate line 21 -->
+    <string name="probe_detect1_down">Assurez-vous que le Bluetooth&#174; \net  que votre sonde soient activés.</string>
+
+    <!-- p27 -->
+    <string name="probe_list_title">Sondes détectées</string>
+    <string name="probe_list_min_remain">min restantes</string>
+
+    <!-- Customized -->
+    <string name="customize_name">Nom1</string>
+    <string name="customize_notes">Notes</string>
+
+    <!-- Dialog -->
+        <string name="dialog_stop">TERMINER</string>
+        <string name="dialog_cancel">"  ANNULER  "</string>
+        <string name="dialog_cancel2">"  ANNULER  "</string>
+        <string name="dialog_ok">"   OK   "</string>
+        <string name="dialog_yes">OUI</string>
+        <string name="dialog_no">"   NON   "</string>
+        <string name="dialog_camera">"  PHOTO  "</string>
+
+        <!-- Terms & conditions -->
+        <string name="dialog_cgu_title">Terms &amp; conditions</string>
+
+        <!-- Take a photo -->
+        <string name="dialog_photo_title">PRENDRE UNE PHOTO</string>
+        <string name="dialog_photo_content">Souhaitez-vous terminer la cuisson et afficher votre photo avec les performances de cuisson? </string>
+
+        <!-- End of Cooking -->
+        <string name="dialog_end_cook_title">FIN DE CUISSON</string>
+        <string name="dialog_end_cook_content">Souhaitez-vous terminer la cuisson et lancer un temps de repos?</string>
+
+        <!-- Resting -->
+        <string name="dialog_resting_complete_title">REPOS TERMINÉ</string>
+
+        <!-- Caution -->
+        <string name="dialog_caution_title">ATTENTION</string>
+        <string name="dialog_slow_caution_content">Votre cuisson est lente.</string>
+        <string name="dialog_overcook_caution_content">Vous risquez d’endommager votre préparation et votre sonde</string>
+        <string name="dialog_complete_overcook_caution_content">Votre cuisson est terminée.\nVeuillez retirer votre préparation de la source de chaleur. </string>
+
+        <!-- Complete -->
+        <string name="dialog_complete_title">CUISSON TERMINÉE</string>
+        <string name="dialog_complete_content">Bon appétit</string>
+
+        <!-- Danger -->
+        <string name="dialog_danger_title">DANGER</string>
+        <string name="dialog_danger_content">Votre risquez d’endommager fortement votre sonde\nEloignez votre sonde de la source de chaleur et vérifiez son bon positionnement</string>
+
+        <!-- Timer Complete -->
+        <string name="dialog_timer_complete_title">MINUTEUR</string>
+        <string name="dialog_timer_complete_content">Temps terminé </string>
+
+        <!-- Pre-alert -->
+        <string name="dialog_pre_alert_title">PRÉ-ALERTE</string>
+        <string name="dialog_pre_alert_content">Votre cuisson est sur le point de se terminer. </string>
+
+        <!-- SIGNAL -->
+        <string name="dialog_signal_title">SIGNAL</string>
+        <string name="dialog_signal_content">Votre sonde est hors de portée.</string>
+
+        <!-- LOGOUT -->
+        <string name="dialog_logout_title">DÉCONNEXION</string>
+        <string name="dialog_logout_content">Etes-vous sûr de vouloir vous déconnecter ?</string>
+        <string name="dialog_logout_yes">" DÉCONNEXION "</string>
+
+        <!-- Terms & Conditions -->
+        <string name="dialog_term_conditions_title">CGU</string>
+        <string name="dialog_term_content">à venir</string>
+
+        <string name="temp_too_low">Température personnalisée trop basse</string>
+
+        <!-- Notification -->
+        <string name="notification_title">Pop-up &amp; Notifications</string>
+
+        <string name="notification_activate">Activer les notifications</string>
+
+        <string name="notification_except1">Sauf alertes de :</string>
+        <string name="notification_except2">Par sécurité, les alertes de danger -\nsurcuisson et risque d’endommagement de\nsonde - ne sont pas désactivables</string>
+        <string name="notification_except3">Sous-cuisson</string>
+        <string name="notification_except4">Fin de cuisson</string>
+        <string name="notification_except5">Hors de portée</string>
+
+        <string name="notification_subtitle1">Activer les messages pop-up</string>
+        <string name="notification_subtitle2">Activer les notifications</string>
+        <!-- Title -->
+        <string name="permission_title">Cher utilisateur meat°it,</string>
+        <string name="permission_content">Nous vous remercions pour votre achat !\n\nNous espérons que vous passerez de très bons moments et de délicieux repas grâce à votre nouvelle sonde meat°it !\n\nCependant, afin que l’application fonctionne correctement et en accord avec les « Autorisations d’application Android »  le système doit vous demander d’activer votre service de localisation.\n\nPourquoi ?\n\nC’est ainsi que le système d’exploitation Android est conçu. Le service de localisation permet de détecter et d’appairer correctement tout appareil utilisant le bluetooth comme des enceintes portables ou bien sur votre sonde meat°it.\n\nCette position est utilisé une seule fois. Elle n’est en aucun cas, ni transféré, ni stocké, ni utilisé par Mastrad.\n\nMerci et bon appétit !\n-\nL’équipe meat°it de Mastrad</string>
+        <string name="permission_ok">"   OK   "</string>
+
+        <!-- Photo dialog -->
+        <string name="photo_retake">Retake Photo</string>
+        <string name="photo_choose_exist_photo">Choice Existing Photo</string>
+        <string name="photo_use_this_photo">Use this Photo</string>
+        <string name="photo_cancel">Cancel</string>
+
+        <!-- V2: new text -->
+        <string name="cooking_title">COOKING CONTROL™</string>
+            <!-- V2 Level 1-4 -->
+            <string name="picture_title">LES FONCTIONNALITÉS DU COOKING CONTROL™</string>
+            <string name="picture1_content">Lorsque vous êtes prêts à cuire, tapez sur le signe play pour lancer le COOKING CONTROL™</string>
+
+            <!-- V2 Level 5-1 -->
+            <string name="tool_title">Comment désirez-vous cuisiner ?</string>
+
+            <!-- V2 Level 6-1 -->
+            <string name="meat_select_title">Que désirez-vous cuisiner ?</string>
+            <string name="meat_select_passer">Passer</string>
+
+            <!-- V2 Level 7-1 ~ 7-3-->
+            <string name="cut_title">Pour des résultats encore plus précis,\n indiquez la coupe de votre viande</string>
+            <string name="cut_temp_title">Quel cuisson désirez-vous ?</string>
+            <string name="cut_total_title">Récapitulatif, tapez pour éditer</string>
+            <string name="cut_attention_title">ATTENTION</string>
+            <string name="cut_attention_lets_cook">Let\'s cook!</string>
+
+    <!-- V2 Level 8-1-->
+    <string name="teach_bird_title">COMMENT INSERER VOTRE SONDE : VOLAILLE ??</string>
+    <string name="teach_bird_content">Insérez "<b>"intégralement"</b>" la partie métallique de votre sonde dans la partie la plus épaisse et la plus dense de la volaille.\n\nEvitez soignemeusement la carcasse et tout vide d’air afin la sonde sois entièrement recouverte par la viande.</string>
+
+
+    <!-- V2 Level 8-3-->
+            <string name="probe_position_title">VERIFIEZ LE POSITIONNEMENT DE VOTRE SONDE</string>
+            <string name="probe_position_content">Assurez-vous que la pointe de votre sonde est bien au coeur de l’aliment\nLa partie métallique de votre sonde doit entièrement être recouverte par la viande.\nLa partie noire, en céramique, de votre sonde ne doit pas être recouverte par la viande.</string>
+
+            <!-- V2 Level 9-->
+            <!--
+            <string name="mobile_voice_title">ATTENTION</string>
+            <string name="mobile_voice_small">Le volume de votre appareil est faible.\nVous risquez de mal entendre les alertes meat°it si vous ne l\'augmentez pas. </string>
+            <string name="mobile_vibrator_mute">Le son de votre appareil est désactivé.\nVous ne pourrez pas entendre les alertes meat°it si vous ne l\'activez pas.</string>
+            -->
+            <string name="mobile_voice_title">Alertes sonores pop-up</string>
+            <string name="mobile_voice_small">Pop-up si le volume est éteint ou si le niveau de volume est &#60;25%</string>
+            <string name="mobile_voice_OK">Ok</string>
+            <!-- V2 Level 15-3 -->
+            <string name="wifi_video">VIDEO</string>
+            <string name="wifi_faq">FAQ</string>
+            <string name="wifi_service_client">SERVICE CLIENT</string>
+
+            <!-- V2 Level 21 -->
+            <string name="Ring_title">Vous pouvez configurer jusqu’à 3 alertes simultanément :</string>
+            <string name="Ring_alert_5_1">Rajouter </string>
+            <string name="Ring_alert_5_2">dans </string>
+            <string name="Ring_alert_5_21">dans (...)</string>
+            <string name="Ring_alert_8_1">Me rappeler de </string>
+            <string name="Ring_alert_8_2">dans </string>
+            <string name="Ring_alert_8_21">dans (...)</string>
+            <string name="Ring_personal_temperature">TEMPERATURE</string>
+            <string name="Ring_personal_time">TIME</string>
+
+    <!-- V2 Foreground service content -->
+    <string name="Foreground_service_content">Le programme est en cours</string>
+
+    <string-array name="RingQuestion">
+        <!--        <item>You can configure up to 3 alarms simultaneously:</item>  -->
+        <item>Me prévenir à mi-cuisson</item>
+        <item>Me prévenir lorsqu’il reste (...)</item>
+        <item>Me prévenir lorsque la température dépasse (...)</item>
+        <item>Arroser dans (...)</item>
+        <item>Retourner dans (...)</item>
+        <item>Rajouter (...) dans (...)</item>
+        <item>Ouvrir dans (...)</item>
+        <item>Fermer dans (...)</item>
+        <!--       <item>Remind me to prepare... in...</item>  -->
+        <item>Me rappeler de (...) dans (...)</item>
+        <item>Personnaliser (...)</item>
+
+    </string-array>
+
+    <string-array name="RingQuestion2">
+        <!--        <item>You can configure up to 3 alarms simultaneously:</item>  -->
+        <item>Me prévenir à mi-cuisson</item>
+        <item>Me prévenir lorsqu’il reste </item>
+        <item>Me prévenir lorsque la température dépasse </item>
+        <item>Arroser dans </item>
+        <item>Retourner dans </item>
+        <item>Rajouter dans </item>
+        <item>Ouvrir dans </item>
+        <item>Fermer dans </item>
+        <!--       <item>Remind me to prepare... in...</item>  -->
+        <item>Me rappeler de dans </item>
+        <item>Personnaliser </item>
+    </string-array>
+
+    <string-array name="Cut_beef">
+            <item>Aloyau</item>
+            <item>Araignée</item>
+            <item>Bavette</item>
+            <item>Chateaubriand</item>
+            <item>Côtes</item>             <!-- 5 -->
+            <item>Entrecôte</item>
+            <item>Faux-filet</item>
+            <item>Filet</item>
+            <item>Filet mignon</item>
+            <item>Haché</item>              <!-- 10 -->
+            <item>Hampe</item>
+            <item>Jarret</item>
+            <item>Macreuse</item>
+            <item>Medaillons</item>
+            <item>Noix</item>               <!-- 15 -->
+            <item>Onglet</item>
+            <item>Poitrine</item>
+            <item>Rôti</item>
+            <item>Rumsteak</item>
+            <item>Steak</item>              <!-- 20 -->
+            <item>Surlonge</item>
+            <item>T-bone</item>
+            <item>Tournedos</item>
+            <item>Passer</item>             <!-- 24 -->
+    </string-array>
+
+        <string-array name="Cut_Veal">
+            <item>Collier</item>
+            <item>Côtes</item>
+            <item>Filet</item>
+            <item>Longe filet</item>
+            <item>Quasi</item>       <!-- 5 -->
+            <item>Noix</item>
+            <item>Flanchet</item>
+            <item>Poitrine</item>
+            <item>Epaule</item>
+            <item>Jarret</item> <!-- 10 -->
+            <item>Roti</item>
+            <item>Passer</item>
+        </string-array>
+
+
+        <string-array name="Cut_Lamb">
+            <item>Carré</item>
+            <item>Côtes</item>
+            <item>Epaule</item>
+            <item>Emincé</item>
+            <item>Gigot</item>       <!-- 5 -->
+            <item>Haché</item>
+            <item>Jarret</item>
+            <item>Longe</item>
+            <item>Rôti de côtes</item>
+            <item>Passer</item>
+        </string-array>
+
+        <string-array name="Cut_Pork">
+            <item>Carré</item>
+            <item>Côtelette</item>
+            <item>Epaule</item>
+            <item>Filet</item>
+            <item>Emincé</item>       <!-- 5 -->
+            <item>Haché</item>
+            <item>Longe</item>
+            <item>Poitrine</item>
+            <item>Travers</item>
+            <item>Roti</item>  <!-- 10 -->
+            <item>Passer</item>
+        </string-array>
+
+        <string-array name="Cut_Turkey">
+            <item>Blanc</item>
+            <item>Entière</item>
+            <item>Passer</item>
+        </string-array>
+
+        <string-array name="Cut_Chicken">
+            <item>Blanc</item>
+            <item>Cuisse</item>
+            <item>Entier</item>
+            <item>Chapon</item>
+            <item>Passer</item>
+        </string-array>
+
+        <string-array name="Cut_Duck">
+            <item>Entier</item>
+            <item>Magret</item>
+            <item>foie gras</item>
+            <item>Passer</item>
+        </string-array>
+
+        <string-array name="Cut_Fish">
+            <item>Bar</item>
+            <item>Espadon</item>
+            <item>Flétan</item>
+            <item>Entier</item>
+            <item>Saumon</item>       <!-- 5 -->
+            <item>Thon</item>
+            <item>Vivaneau rouge</item>
+            <item>St Pierre</item>
+            <item>Turbot</item>
+            <item>Merou</item>  <!-- 10 -->
+            <item>Cabillaud</item>  <!-- 11 -->
+            <item>Passer</item>
+        </string-array>
+
+    <string name="tools_charcoal_bbq">BBQ charbon</string>
+    <string name="tools_gas_electric_bbq">BBQ gaz et électrique</string>
+    <string name="tools_o_plancha">O\'Plancha</string>
+    <string name="tools_pan">Poêle</string>
+    <string name="tools_oven">Four</string>
+    <string name="tools_smoker">Fumoir</string>
+    <string name="tools_rotisserie">Rôtisserie</string>
+    <string name="tools_griddle">Plancha</string>
+    <string name="tools_steam_oven">Four à vapeur</string>
+
+    <string-array name="QandA_Q">
+        <item>L’application est-elle payante ? </item>
+        <item>Puis-je utiliser d’autre application tout en utilisant meat°it ?</item>
+        <item>Dans quel cas ma sonde m’alerte-t-elle ?</item>
+        <item>Avec quel appareil puis-je utiliser meat°it ?</item>
+        <item>Suis-je prévenu lorsqu’il faut retourner la viande ?  </item>
+        <item>Est-ce que ma sonde fonctionne en utilisant une plaque à induction ?</item>
+        <item>Puis-je utiliser meat°it au micro-ondes.</item>
+        <item>Puis-je utiliser meat°it avec un four/BBQ fermé.</item>
+        <item>Que faire si ma sonde n’est pas détectée ?</item>
+        <item>Que faire si ma sonde est hors de portée ?</item>
+        <item>Ma sonde passe t’elle au lave-vaisselle ?</item>
+        <item>Comment entretenir ma sonde ? </item>
+        <item>En combien de temps charge ma sonde ? </item>
+        <item>De combien de temps d’autonomie dispose ma sonde ?</item>
+        <item>Comment éteindre ma sonde ?</item>
+        <item>Combien de temps ma sonde est-elle garantie ? </item>
+        <item>Quelle version d\'iOS, d’Android OS et de Bluetooth doit je avoir pour utiliser l\'application meat°it ?</item>
+        <item>Des conseils pour améliorer la portée du Bluetooth ?</item>
+        <item>En tant qu’utilisateur Android OS, l’application m’a demandé de bien vouloir activer mon service de localisation. Pourquoi ?</item>
+        <item>Comment changer l’unité de degré de mon application ?</item>
+        <item>A quelle(s) température(s) résiste meat°it ?         Ma sonde résiste t-elle aux flammes ?</item>
+        <item>Y-a-t-il des recettes fournies ? Où puis-je les trouver ? </item>
+        <item>Ma coupe de viande n’est pas présente ? Que faire ?</item>
+        <item>Puis-je régler une température personnalisée ?</item>
+        <item>Jusque quelle température interne puis-je utiliser meat°it ? Que se passe t\'il si celle-ci dépasse 100°C ?</item>
+        <item>Les fours et BBQs ne sont ils pas des cages de Faraday, imperméable aux ondes radio électromagnétiques ?</item>
+        <item>Que signifie "organoleptique" ?</item>
+        <item>Puis-je utiliser meat°it pour réaliser des fritures ?</item>
+        <item>Puis-je utiliser meat°it pour réaliser des cuissons à la vapeur ?</item>
+        <item>Puis-je utiliser meat°it pour réaliser des cuissons sous-vide ?</item>
+        <item>Puis-je utiliser meat°it dans une cocotte-minute ?</item>
+        <item>Pourquoi ne puis-je pas utiliser meat°it pour calculer la température de surface de mon appareil de cuisson ?</item>
+        <item>Pourquoi le temps restant ne s\'affiche pas ?</item>
+        <item>Si ma sonde est laissé sur sa base pendant longtemps, sans utilisation, la durée de vie va-t-elle être réduite ?</item>
+        <item>Ma sonde meat°it ne charge plus. Que faire ?</item>
+        <item>Pourquoi meat°it n’indique pas la température ambiante ?</item>
+        <item>Comment supprimer une ligne de mon historique ?</item>
+        <item>Quelle est l\'icône qui apparaît parfois en haut à gauche de mon écran ?</item>
+        <item>Quel est la limite de caractère des commentaires de cuisson ?</item>
+        <item>Je suis connecté en Wi-FI mais les touches de fonctions ont disparues, c’est normal ?</item>
+        <item>Ma sonde me donne une mesure de température incorrecte, que se passe t\'il ?</item>
+        <item>J’ai contacté le service client mais je n’ai toujours pas eu de réponse, m’avez vous oublié ?</item>
+        <item>Si aucune de ces questions n’a pu résoudre votre problème. Contactez-nous ! meatit@mastrad.fr</item>
+    </string-array>
+
+    <string-array name="QandA_A">
+        <item>Non et elle ne le sera jamais. En revanche, celle-ci continuera à évoluer avec le temps pour toujours vous proposer la meilleure expérience possible!</item>
+        <item>Bien sûr ! meat°it continuera à vous envoyez des alertes/notifications même en étant arrière-plan.</item>
+        <item>Votre sonde meat°it vous alerte : En cas de sous-cuisson (vitesse lente), surcuisson (vitesse rapide), danger, lorsque c\'est prêt, et selon vos alertes programmées. Bon appétit !</item>
+        <item>Vous pouvez utiliser meat°it avec tout appareil du type : BBQ charbon ou gaz, O’Plancha de Mastrad, poêle, four vapeur, fumoir, rôtisserie, plancha, four. Toute autre utilisation est déconseillée.</item>
+        <item>Non, parce que chacun à un degré d’appréciation différent et nous ne pouvons donc pas décider à votre place. En revanche, vous pouvez programmer un minuteur ou un chronomètre. Vous pouvez aussi configurer des alertes. Pour cela tappez sur l’icône en forme de « Cloche » dans le Cooking control™, vous pouvez choisir parmi les alertes proposées ou bien en personnaliser une. Par exemple : Me rappeler de retourner mon steak dans 10’.</item>
+        <item>Oui, elle fonctionne aussi avec une plaque à induction.</item>
+        <item>Non ! Toute utilisation au micro-ondes est formellement proscrite par mastrad. Vous causerez des dommages irréversibles à votre sonde ainsi qu’à votre micro-ondes.</item>
+        <item>Oui. Cependant, les fours/BBQs fermés étant des « semis » cage de Faraday, la portée du signal en sera affectée. Afin de conserver celui-ci, veuillez à ne pas éloigner votre téléphone/tablette à plus de 5 mètres de votre sonde. Ou bien utilisez l\'extension Wifi.</item>
+        <item>Assurez-vous que le bluetooth de votre téléphone est activé. Si votre sonde n’est pas détectée alors qu’elle est en place dans votre viande, retirez-la à l’aide de l’extracteur de sonde. Activez votre sonde à l’aide de la station de chargement, conformément aux instructions du guide de démarrage rapide : « Activez votre sonde meat°it en plaçant brièvement la partie noire de la sonde dans la partie centrale de la station de chargement. Retirez-la, elle est activée. ». Si cela ne fonctionne pas, mettez votre sonde à charger au moins 15 minutes. Si votre problème persiste, contactez le service client : meatit@mastrad.fr</item>
+        <item>Si votre sonde est hors de portée, un signal sonore et visuel vous avertira. Rapprochez-vous de votre sonde afin que l’application puisse automatiquement se reconnecter. </item>
+        <item>Non ! Vous détruirez totalement votre sonde et ce serait dommage…</item>
+        <item>Votre sonde se nettoie facilement sous un filet d’eau mais ne doit pas être immergée, séchez-la avec un chiffon doux. La station de chargement se nettoie avec un chiffon doux et sec. </item>
+        <item>Pour une charge complète, comptez 2h. Une charge de 15 min permet d’effectuer une cuisson jusqu’à 30 min. Un voyant vert vous indique que votre sonde est complètement chargée. Un arrêt automatique en cas d’inactivité permet à la sonde de s’éteindre après 30 min afin de préserver la batterie.</item>
+        <item>Votre sonde offreplus de 24h d’autonomie. </item>
+        <item>Votre sonde s’éteint automatiquement après 30 minutes d’inactivité.</item>
+        <item>Votre sonde de cuisson meat°it est garantie 2 ans (1 an pour les US) mais continuez à l’utiliser cela nous fait plaisir ;)</item>
+        <item>iOS version 9.1 ou supérieure.\nAndroid version 5.0 ou supérieure.\nBluetooth 4.0 ou supérieure.</item>
+        <item>La meilleure solution consiste à utiliser l\'extension Wi-Fi. Si cela vous est impossible, vous pouvez essayer de maintenir votre téléphone/tablette en position verticale (ou placez-le dans un dock.) Cela donnera de meilleurs résultats que de le poser à plat sur une table ou de le garder dans votre poche. Evitez aussi de poser votre téléphone/tablette sur une surface métallique. Une sonde bien chargée émet mieux qu’une sonde peu chargée, faîtes en sorte d’éviter d’utiliser meat°it peu chargée ;). Enfin sachez que votre sonde émet son signal Bluetooth depuis l\'intégralité de la céramique noire et non seulement depuis sa partie supérieure. Veillez donc à ce que l\'embout en céramique ne soit pas recouvert dans sa totalité, et orientez votre téléphone vers cet embout afin d’obtenir de meilleurs résultats !</item>
+        <item>C’est ainsi que le système d’exploitation Android est conçu. Cela permet au système de détecter et de s’appairer avec votre sonde. Mais ne vous inquiétez pas Mastrad n’utilise et n’enregistre en aucun cas cette position.</item>
+        <item>Afin de passer des degrés Celcius au degré Fahrenheit et vice-versa, rendez-vous dans les réglages, à l’onglet « Unité », choisissez celle qui vous convient.</item>
+        <item>La qualité de l’ingénierie de meat°it fait que celle-ci permet de résister à des températures internes jusqu’à 100°C. Concernant la température ambiante, meat°it résiste sans aucun problème à 300°C, ce qui correspond à la plus haute température ambiante de cuisson usuelle. De plus, la sonde meat°it résiste jusqu’à 3 minutes en contact avec les flammes, soit une température avoisinant les 700°C. Une alerte sonore et visuelle vous indique lorsque votre sonde est en danger. </item>
+        <item>Plusieurs recettes sont disponibles sur : www.mastrad-paris.fr/recettes ou sur le site dédié : www.meat-it.co. Ces recettes évolueront avec le temps. Vous pouvez d’ores et déjà nous envoyer les vôtres pour recevoir des promotions ! meatit@mastrad.fr</item>
+        <item>Mea culpa, nous avons essayés de penser à tout… Vous pouvez « Passer » cette étape tout en bas de la liste, notre algorithme calculera alors une cuisson optimale suivant le type de viande que vous avez choisi. Envoyez nous un petit mail et nous réglerons cela !</item>
+        <item>Oui, il est possible de personnaliser sa température. À chaque étape, un bouton "personnalisé" est disponible pour vous donner la possibilité de configurer votre cuisson selon votre souhait.</item>
+        <item>La qualité de l’ingénierie de meat°it fait que celle-ci permet de résister à des températures internes jusqu’à 100°C. Cependant votre viande sera probablement immangeable dépassé les 90°C…</item>
+        <item>Une cage de Faraday efficace ne doit pas avoir de trou pour être impérméable aux ondes radio éléctomagnétiques. Heureusement, les fours et barbecues ne sont pas construits pour être des cages de Faraday, il y a de nombreux trous, joints en plastique, ventilation etc...\nCependant, les murs en béton ou les parois en métal peuvent affecter  le signal Bluetooth. La qualité de votre signal est indépendante de notre volonté, celle-ci est soumise à la structure de votre habitat.</item>
+        <item>On parle de propriété organoleptique pour des stimuli qui se rapportent à la sphère sensorielle goût, flaveur, odeur. </item>
+        <item>Non, meat°it n\'est pas fait pour être laissé au contact de liquides.</item>
+        <item>Oui, meat°it résiste à l\'humidité, votre sonde fonctionnera tant qu’elle n’est pas immergé dans un liquide.</item>
+        <item>Nous ne vous recommandons pas d\'utiliser meat°it pour des cuissons sous-vide, la sonde n\'est pas faîtes pour être immergée dans un liquide.</item>
+        <item>Non, la pression et l\'humidité sont trop élevées</item>
+        <item>On vous le dit parce que c’est vous… Un des secrets de meat°it réside dans le fait que c’est la fraîcheur de la chair qui refroidit la sonde et ses composants et qui donc lui permet de résister à de tels températures. Imaginez un contact direct avec un BBQ à 250°C…</item>
+        <item>Le temps restant dépend de la température cible, et de la température la viande. Par exemple, si la température cible est de 60°C, le temps restant ne s\'affichera qu\'aux environs de 32°C. Avant 32°C le temps de cuisson n\'a pas été suffisant pour calculer une vitesse et donc le temps de cuisson restant.</item>
+        <item>Non votre sonde arrête de se charger lorsque la batterie est chargée à 100%.</item>
+        <item>Après plusieurs utilisations, les différentes parties métaliques peuvent se couvrir de chair ou de graisse. Veillez à les nettoyer avant de charger votre sonde.</item>
+        <item>Parce que cela ne sert pas à grand-chose et que les fours et bbq l\'indique déjà… Nous avons fait mieux : le Cooking control™ qui permet de calculer la vitesse de cuisson !</item>
+        <item>Faîtes glisser vers la gauche pour supprimer une ligne de votre historique.</item>
+        <item>C\'est le raccourci du Cooking control™ ! Tapez dessus et cela vous ramènera automatiquement vers le dernier Cooking control™ que vous avez vu.</item>
+        <item>Aucune ! Vous pouvez même copié-coller vos recettes favorites depuis le net. Et on a prévu encore mieux d’ici l\'été 2019…</item>
+        <item>Pas d’inquiétude ! Si vous êtes connecté en Wi-Fi, le deuxième téléphone est en mode « read-only » vous pouvez seulement lire les informations de cuissons. Envie de changer quelque chose ? Utilisez votre premier téléphone !</item>
+        <item>La mise en place de la sonde est importante pour une mesure de température correcte de la viande\n- Veillez a insérer complétement la partie métalique, et à ne pas couvrir la partie noire de la sonde (par de la viande, ou du papier cuisson)\n- Ne pas mettre le plat avec la sonde trop proche des parois de votre appareil de cuisson (gardez une distance de 5cm).</item>
+        <item>Jamais ! Certains problèmes peuvent prendre plus de temps que d’autres en tout cas c’est promis, nous reviendrons vers vous.</item>
+        <item></item>
+    </string-array>
+
+    <!-- V2 Fish update -->
+    <string name="food_fish_teach_title">COMMENT INSERER VOTRE SONDE : POISSON ?</string>
+    <string name="food_fish_teach_content1">Insérez intégralement la partie métallique de  votre sonde dans la partie la plus épaisse et la plus dense du poisson.</string>
+    <string name="food_fish_teach_content2">Evitez soigneusement tout vide d’air afin que la sonde soit entièrement recouverte par la viande.</string>
+
+    <!-- V2 ProbeList connect -->
+    <string name="probelist_connect">Connecter</string>
+</resources>
