@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Meatit1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="account_fragment">這裡是帳戶頁面</string>
+    <string name="setting_fragment">這裡是設定頁面</string>
+    <string name="go_account">到帳戶頁面</string>
+    <string name="go_setting">到設定頁面</string>
 </resources>
