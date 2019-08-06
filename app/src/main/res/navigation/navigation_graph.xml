@@ -12,26 +12,14 @@
         <action
             android:id="@+id/toAccountFragment"
             app:destination="@id/accountFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-        <action
-            android:id="@+id/toSettingFragment"
-            app:destination="@id/settingFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/accountFragment"
         android:name="com.example.meatit.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" />
-    <fragment
-        android:id="@+id/settingFragment"
-        android:name="com.example.meatit.SettingFragment"
-        android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
 </navigation>

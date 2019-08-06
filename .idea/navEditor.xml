@@ -31,24 +31,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_mainFragment_to_accountFragment">
+                            <entry key="toAccountFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
                           </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="settingFragment">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-899" />
-                            <option name="y" value="-107" />
-                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

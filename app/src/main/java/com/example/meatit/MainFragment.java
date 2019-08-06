@@ -35,8 +35,6 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Button goToAccountBtn = view.findViewById(R.id.goToAccountBtn);
-        Button goToSettingBtn = view.findViewById(R.id.goToSettingBtn);
         goToAccountBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toAccountFragment));
-        goToSettingBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toSettingFragment));
     }
 }

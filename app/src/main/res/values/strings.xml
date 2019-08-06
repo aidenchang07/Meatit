@@ -1,9 +1,638 @@
 <resources>
-    <string name="app_name">Meatit1</string>
+    <string name="app_name">Meat°it</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="account_fragment">這裡是帳戶頁面</string>
-    <string name="setting_fragment">這裡是設定頁面</string>
-    <string name="go_account">到帳戶頁面</string>
-    <string name="go_setting">到設定頁面</string>
+    <string name="facebook_app_id">1635312639839389</string>
+    <string name="fb_login_protocol_scheme">fb1635312639839389</string>
+
+    <!-- other -->
+    <string name="ver_company_mark">- © Mastrad 2019</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth is not supported</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="connecting_probe">Connecting probe ...</string>
+    <string name="fail_email_addr">Not a valid e-mail address</string>
+    <string name="no_mastrad_technical_manual">Can\'t find Mastrad technical manual</string>
+    <string name="no_connective_probe">There is no connective probe, please connect one probe</string>
+    <string name="ble_not_enable">Bluetooth is not enable, please turn on bluetooth</string>
+    <string name="login_not_find">Not a valid account, Please check again</string>
+    <string name="login_not_find_server">Not a valid customer account or password, Please check again</string>
+    <string name="login_turn_on_network">Please turn on network</string>
+    <string name="login_password_err">Password is wrong</string>
+    <string name="login_facebook_create_fail">Facebook account add fail:</string>
+    <string name="login_facebook_create_success">Facebook account add success</string>
+    <string name="login_facebook_account_exist">This email address is already linked to an account.</string>
+    <string name="login_add_to_db_fail">Add to database fail</string>
+    <string name="photo_save_to">Photo is saved to:</string>
+    <string name="photo_save_fail">Photo save error</string>
+    <string name="photo_share_using">Please choice app:</string>
+    <string name="favorite_food_choice_fail">"Don't select probe or probe is cooking now"</string>
+    <string name="ing">ing...</string>
+    <string name="probe_delete">Delete</string>
+    <string name="fail_create_account">Failed to create account</string>
+
+    <!-- Create data err -->
+    <string name="create_err_not_agree_cgd">Please accept the General Conditions of Use</string>
+    <string name="create_err_pwd_not_match">Password does not match</string>
+    <string name="create_err_field_empty">Some fields are empty</string>
+    <string name="create_err_not_valid_email">Not a valid e-mail address</string>
+    <string name="create_err_pwd_less_6">Password must have at least 6 characters</string>
+
+    <!-- lack: p9 -->
+    <!-- P1 -->
+    <string name="login_title">My smart cooking thermometer</string>
+    <string name="login_password">Password</string>
+    <string name="login_forgot_pwdQ">Forgot password?</string>
+    <string name="login_login">LOGIN</string>
+    <string name="login_new_account">New account</string>
+    <string name="login_new_create">CREATE</string>
+    <string name="login_facebook">Or log in with</string>
+    <string name="login_email">Email</string>
+    <string name="login_create_my_account">CREATE MY ACCOUNT</string>
+
+    <!-- P2 -->
+    <string name="login_last_name">Last name</string>
+    <string name="login_first_name">First name</string>
+    <string name="login_password_confirmation">Password confirmation</string>
+    <string name="login_receive_info">I would like to receive information and updates about the Mastrad brand.</string>
+    <string name="login_accept_terms">I accept the \ngeneral terms and conditions.</string>
+    <string name="login_accept_terms_link">general terms and conditions.</string>
+    <string name="login_create_account">CREATE MY ACCOUNT</string>
+
+    <!-- P3 -->
+    <string name="login_forgot_pwd">Forgot password</string>
+    <string name="login_send">SEND</string>
+
+    <!-- P4 -->
+    <string name="introduce_1_top">QUICK START GUIDE</string>
+    <string name="introduce_1_middle">Activate your meat°it probe by briefly placing the black part of the probe in the central section of the docking station.\nTake it out; it is activated.</string>
+    <!--<string name="introduce_1_down">111<![CDATA[ X<sup><small>2</small></sup> ]]>222</string> -->
+    <string name="introduce_1_down">Click on the meat°it app and make sure\nthat the Bluetooth&#174; is turned on</string>
+
+    <!-- P5 -->
+    <string name="introduce_2_top">QUICK START GUIDE</string>
+    <string name="introduce_2_middle">Select your probe in order to\nprogram your cooking.</string>
+    <string name="introduce_2_down">Select your cooking device, type of food, cut and desired doneness and then validate.</string>
+
+    <!-- P6 -->
+    <string name="introduce_3_top">HOW TO INSERT YOUR PROBE?</string>
+    <string name="introduce_3_middle">Insert "<b>"the entirety"</b>" of the metallic part of our probe into the thickest part of the meat.\nThe meat should not cover the black ceramic piece of your probe.</string>
+    <string name="introduce_3_down">The thickness of the meat needs to be at least 1/2 inch (20mm)</string>
+    <string name="introduce_3_buttonOK">"   OK   "</string>
+
+    <!-- P7 -->
+    <string name="introduce_4_top">HOW TO REMOVE YOUR PROBE?</string>
+    <string name="introduce_4_top2">Careful, when finished cooking, your probe is very hot. Always use your extraction key and any other adequate protection gear to remove it.</string>
+    <string name="introduce_4_middle">Use the key located underneath the docking station in order to remove the probe.</string>
+    <string name="introduce_4_down">Effortlessly remove the probe from\nthe meat.</string>
+    <string name="introduce_4_gotit">"       GOT IT       "</string>
+    <string name="introduce_4_noShow">Don’t show me this again</string>
+
+    <!-- P8 -->
+    <string name="trouble_title">TROUBLESHOOTING</string>
+    <string name="trouble_middle">I ensure that Bluetooth&#174; \n is activated on my telephone.</string>
+    <string name="trouble_down">I reactivate my probe.\nI potentially recharge it.</string>
+    <string name="trouble_button">"  REFRESH  "</string>
+
+    <!-- p10 -->
+    <string name="cook_teach_title">HOW TO INSERT YOUR PROBE?</string>
+    <string name="cook_teach_teach1">Insert "<b>"the entirety"</b>" of the metallic part of your probe into the thickest part of the meat.\nThe meat should not cover the black ceramic piece of your probe.</string>
+    <string name="cook_teach_teach2">The thickness of the meat needs to be at least 1/2 inch (20mm)</string>
+    <string name="cook_teach_OK">OK</string>
+
+    <!-- p11 -->
+    <string name="cook_internal_temp">INTERNAL\nTEMP.</string>
+    <string name="cook_target_temp">TARGET\nTEMP.</string>
+    <string name="cook_internal_temp2">I N T E R N A L</string>
+    <string name="cook_target_temp2">T A R G E T</string>
+    <string name="cook_timer">Timer</string>
+
+    <!-- p12 -->
+    <string name="cook_ready">IT’S READY</string>
+    <string name="cook_overcooking">OVERCOOKING</string>
+
+    <!-- p13 -->
+    <string name="cook_photo_meat">Meat</string>
+    <string name="cook_photo_doneness">Doneness</string>
+    <string name="cook_photo_internal_temp">Internal temp</string>
+    <string name="cook_photo_cooking_time">Cooking time</string>
+    <string name="cook_photo_made_on">Made on</string>
+
+    <!-- p14 -->
+    <string name="slide_menu_program">Program my probe</string>
+    <string name="slide_menu_monitor">Monitor my cooking</string>
+    <string name="slide_menu_cooking">Best of</string>
+    <string name="slide_menu_recipe">Recipes</string>
+    <string name="slide_menu_timer">Timer</string>
+    <string name="slide_menu_settings">Settings</string>
+    <string name="slide_menu_help">Help</string>
+
+    <!-- p15 -->
+    <string name="count_stopwatch">STOPWATCH</string>
+    <string name="count_timer">TIMER</string>
+    <string name="count_reset">RESET</string>
+    <string name="count_hours">hours</string>
+    <string name="count_minute">minutes</string>
+    <string name="count_second">seconds</string>
+
+    <!-- p16 -->
+    <string name="cook_list_title">Best of</string>
+    <string name="cook_list_favorite">My favorites</string>
+    <string name="cook_list_history">My history</string>
+    <string name="cook_favorite">Favorite</string>    <!-- for v2 -->
+
+    <!-- p17 in p16-->
+
+    <!-- p18 -->
+    <string name="history_title">My history</string>
+    <string name="history_meat">Meat:</string>
+    <string name="history_doneness">Doneness:</string>
+    <string name="history_internal_temp">Internal temp:</string>
+    <string name="history_cook_time">Cooking time:</string>
+    <string name="history_made_on">Made on:</string>
+
+    <!-- p19, p20 -->
+    <string name="setting_title">Settings</string>
+    <string name="setting_vibrate_mode">Vibrate mode</string>
+    <string name="setting_ringtone">Ringtone</string>
+    <string name="setting_pre_alert">Pre-alert</string>
+    <string name="setting_units">Units</string>
+    <string name="setting_about">About</string>
+    <string name="setting_logout">Logout</string>
+    <string name="setting_keep_live">Keep the screen always ON</string>
+    <string name="setting_keep_live1">Keep the screen always ON</string>
+
+    <!--V2 add,  -->
+    <string name="setting_hide_all_tutorials">Hide all the tutorials</string>
+    <string name="setting_authorize_access_as">Authorize access as a background process</string>
+    <string name="setting_connection_wifi">WiFi connection</string>
+
+    <string name="setting_ringtone_detail">RingTone</string>
+    <string name="setting_vibrate_detail">Activate the vibrations as well as the sound.</string>
+    <string name="setting_pre_alert_detail">Alerts you once 5 minutes remain.</string>
+    <string name="setting_keep_live_detail">Always keep the screen on. Caution, this option has high battery use. We recommend you plug in your appliance for long cooking times.</string>
+    <string name="setting_hide_all_tutorials_detail">Hide ALL the tutorials.</string>
+    <string name="setting_authorize_access_as_detail">Allow use of the app as a background process.\nIn this way you can follow the cooking process while using other apps.\nThis will take the form of a permanent upper banner on your screen where the remaining time and cooking speed will be displayed.</string>
+
+    <!-- p21 -->
+    <string name="about_title">About</string>
+    <string name="about_app_version">App version</string>
+    <string name="about_firmware_ver">Firmware version</string>
+    <string name="about_website">Website</string>
+
+    <!-- p21 -->
+    <string name="help_title">Help</string>
+    <string name="help_connect_device">Connect my device</string>
+    <string name="help_instruct_manual">Instructions manual</string>
+    <string name="help_faq">FAQ</string>
+    <string name="help_remark">A remark?</string>
+    <string name="help_customer_service">Customer Service</string>
+
+    <string name="help_remark_name">Name1</string>
+    <string name="help_remark_email">Email</string>
+    <string name="help_remark_telephone">Telephone</string>
+
+    <string name="help_remark_info">A suggestion for improvement? A remark? Something you would like in future?\n\nmeat°it is a joint project, we are listening!</string>
+    <string name="help_service_info">Tell us your problem, we will answer within 48 hours.</string>
+    <string name="help_send">SEND</string>
+    <string name="help_send_feedback">Thank you for your message!\n\nWe will answer as soon as possible.\n\n-\n\nThe meat°it team</string>
+
+    <!-- food -->
+    <string name="food_beef">Beef</string>
+    <string name="food_veal">Veal</string>
+    <string name="food_lamb">Lamb</string>
+    <string name="food_pork">Pork</string>
+    <string name="food_chicken">Chicken</string>
+    <string name="food_turkey">Turkey</string>
+    <string name="food_duck">Duck</string>
+    <string name="food_fish">Fish</string>
+    <string name="food_custom">Customized</string>
+
+    <string name="food_fire_rare">Rare</string>
+    <string name="food_fire_middle_rare">Medium rare</string>
+    <string name="food_fire_medium">Medium</string>
+    <string name="food_fire_medium_well">Medium well</string>
+    <string name="food_fire_well_done">Well done</string>
+    <string name="food_fire_personalized">Personalized</string>
+
+    <string name="food_fire_semi_cooked">Semi-cooked</string>
+    <string name="food_fire_cooked">Cooked</string>
+    <string name="food_fire_pink">Pink</string>
+    <string name="food_fire_medium_to_well">Medium to well</string>
+    <string name="food_fire_pearly_fish">Pearly</string>
+    <string name="food_fire_well_done_fish">Well done</string>
+
+    <string name="food_fire_ideal_temp">The ideal temperature</string>
+
+    <string name="food_fire_rare_low_case">rare</string>
+    <string name="food_fire_middle_low_case">medium rare</string>
+    <string name="food_fire_medium_low_case">medium</string>
+    <string name="food_fire_well_done_low_case">well done</string>
+
+    <!-- p26 -->
+    <string name="probe_detect1_top">Searching for\nnearby device ...</string>
+    <string name="probe_detect1_down">Be sure that Bluetooth&#174; \nand your probe are activated.</string>
+
+    <!-- p27 -->
+    <string name="probe_list_title">Devices available</string>
+    <string name="probe_list_min_remain">min remaining</string>
+
+    <!-- Customized -->
+    <string name="customize_name">Name1</string>
+    <string name="customize_notes">Notes</string>
+
+    <!-- Dialog -->
+    <!-- <string name="dialog_stop">STOP</string> -->
+    <!-- <string name="dialog_cancel">"  CANCEL  "</string> -->
+    <string name="dialog_stop">"   YES   "</string>
+    <string name="dialog_cancel">"  CANCEL  "</string>
+    <string name="dialog_cancel2">"  NO  "</string>
+    <string name="dialog_ok">"   OK   "</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">"   NO   "</string>
+    <string name="dialog_camera">"  CAMERA  "</string>
+
+    <!-- Terms & conditions -->
+    <string name="dialog_cgu_title">Terms &amp; conditions</string> <!-- No use -->
+
+    <!-- Take a photo -->
+    <string name="dialog_photo_title">TAKE A PICTURE</string>
+    <string name="dialog_photo_content">Do you really want to stop cooking?</string>
+
+    <!-- End of Cooking -->
+    <string name="dialog_end_cook_title">END OF COOKING</string>
+    <string name="dialog_end_cook_content">Do you want to stop cooking and start resting time?</string>
+
+    <!-- Resting -->
+    <string name="dialog_resting_complete_title">RESTING COMPLETE</string>
+
+    <!-- Caution -->
+    <string name="dialog_caution_title">CAUTION</string>
+    <string name="dialog_slow_caution_content">Your cooking is (too) slow.</string>
+    <string name="dialog_overcook_caution_content">You might expose your meat and your probe to damage</string>
+    <string name="dialog_complete_overcook_caution_content">Your cooking is complete.\nMake sure to remove your meat from the heating source. </string>
+
+    <!-- Complete -->
+    <string name="dialog_complete_title">COOKING COMPLETE</string>
+    <!-- <string name="dialog_complete_content">Enjoy your meal !</string> -->
+    <string name="dialog_complete_content">Bon appetite</string>
+
+    <!-- Danger -->
+    <string name="dialog_danger_title">DANGER</string>
+    <string name="dialog_danger_content">You expose your probe to irreversible damage\nKeep your probe away from the heat source and check that it is positioned correctly</string>
+
+    <!-- Timer Complete -->
+    <string name="dialog_timer_complete_title">TIMER</string>
+    <string name="dialog_timer_complete_content">Timer complete</string>
+
+    <!-- Pre-alert -->
+    <string name="dialog_pre_alert_title">PRE-ALERT</string>
+    <string name="dialog_pre_alert_content">Your cooking is almost done.</string>
+
+    <!-- SIGNAL -->
+    <string name="dialog_signal_title">SIGNAL</string>
+    <string name="dialog_signal_content">Your probe is out of range.</string>
+
+    <!-- LOGOUT -->
+    <string name="dialog_logout_title">LOGOUT</string>
+    <string name="dialog_logout_content">Are you sure to logout?</string>
+    <string name="dialog_logout_yes">" LOGOUT "</string>
+
+    <!-- Terms & Conditions -->
+    <string name="dialog_term_conditions_title">TERMS &amp; CONDITIONS</string>
+    <string name="dialog_term_content">On-going</string>
+
+
+    <string name="temp_too_low">Custom temp. is too low</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Pop-up &amp; Notifications</string>
+
+    <string name="notification_activate">Activate notifications</string>
+
+    <string name="notification_except1">Except for the following alerts:</string>
+    <string name="notification_except2">For security reasons, hazard alerts, such as\noverheating or risk of damage to the probe;\ncannot be deactivated</string>
+    <string name="notification_except3">Underheating</string>
+    <string name="notification_except4">End of cooking</string>
+    <string name="notification_except5">Out of range</string>
+
+    <string name="notification_subtitle1">Activate pop-up messages</string>
+    <string name="notification_subtitle2">Activate notifications</string>
+
+    <!-- Title -->
+    <string name="permission_title">Dear meat°it user,</string>
+    <string name="permission_content">Thank you for purchasing one of our products!\n\nWe hope you’ll enjoy delicious meals with your new meat°it probe!\n\nIn order for the application to operate correct and in compliance with the “Android app authorizations”, the system will ask you to activate the localization function.\n\nWhy?\n\nBecause this is how the Android operating system is designed. The localization function makes it possible to detect and to pair all Bluetooth devices such as portable speakers or your meat°it probe.\n\nThis position is used only once. It is under no circumstances either transferred, stored or used by Mastrad.\n\nThank you and bon appétit!\n-\nThe Mastrad meat°it team</string>
+
+    <string name="permission_ok">"   OK   "</string>
+
+
+    <!-- Photo dialog -->
+    <string name="photo_retake">Retake Photo</string>
+    <string name="photo_choose_exist_photo">Choice Existing Photo</string>
+    <string name="photo_use_this_photo">Use this Photo</string>
+    <string name="photo_cancel">Cancel</string>
+
+    <!-- V2 new text-1810 -->
+    <string name="cooking_title">COOKING CONTROL™</string>
+    <!-- V2 Level 1-4 -->
+    <string name="picture_title">THE FUNCTIONS OF THE COOKING CONTROL™</string>
+    <string name="picture1_content">Once you are ready to cook, tap on the play sign to launch the COOKING CONTROL™</string>
+
+    <!-- V2 Level 5-1 -->
+    <string name="tool_title">How do you want to cook?</string>
+
+    <!-- V2 Level 6-1 -->
+    <string name="meat_select_title">What do you want to cook?</string>
+    <string name="meat_select_passer">Skip</string>
+
+    <!-- V2 Level 7-1 ~ 7-4-->
+    <string name="cut_title">For even more accurate results,\n indicate your cut of meat</string>
+    <string name="cut_temp_title">How would you like it cooked?</string>
+    <string name="cut_total_title">Summary, tap to edit</string>
+    <string name="cut_attention_title">CAUTION</string>
+    <string name="cut_attention_lets_cook">Let\'s cook!</string>
+
+    <!-- V2 Level 8-1-->
+    <string name="teach_bird_title">HOW TO INSERT YOUR PROBE: POULTRY?</string>
+    <string name="teach_bird_content">Insert the entire metal part of the probe into the thickest, densest part of the poultry.\n\nBe sure to avoid the carcass and any empty space so that the probe is totally covered by the meat.</string>
+
+    <!-- V2 Level 8-3-->
+    <string name="probe_position_title">CHECK THE POSITION OF YOUR PROBE</string>
+    <string name="probe_position_content">Make sure that the tip of your probe is right inside the food.\nThe metal part of your probe must be entirely covered with meat.\nThe meat should not cover the black ceramic piece of your probe.</string>
+
+    <!-- V2 Level 9-->
+    <!--
+    <string name="mobile_voice_title">CAUTION</string>
+    <string name="mobile_voice_small">The sound volume of your device is low.\nYou might struggle to hear the meat°it alerts if you do not increase it.</string>
+    <string name="mobile_vibrator_mute">The sound on your device is deactivated.\nYou will not be able to hear the meat°it alerts if you do not activate it.</string>
+    -->
+    <string name="mobile_voice_title">Sound alerts pop-up</string>
+    <string name="mobile_voice_small">Pop-up if volume is off or if volume level is &#60; 25%</string>
+    <string name="mobile_voice_OK">OK</string>
+    <!-- V2 Level 15-3 -->
+    <string name="wifi_video">VIDEO</string>
+    <string name="wifi_faq">FAQ</string>
+    <string name="wifi_service_client">CUSTOMER SERVICE</string>
+
+    <!-- V2 Level 21 -->
+    <string name="Ring_title">You can configure up to 3 alarms simultaneously:</string>
+    <string name="Ring_alert_5_1">Add  </string>
+    <string name="Ring_alert_5_2">in </string>
+    <string name="Ring_alert_5_21">in (...)</string>
+    <string name="Ring_alert_8_1">Remind me to </string>
+    <string name="Ring_alert_8_2">in </string>
+    <string name="Ring_alert_8_21">in (...)</string>
+    <string name="Ring_personal_temperature">TEMPERATURE</string>
+    <string name="Ring_personal_time">TIME</string>
+
+    <!-- V2 Foreground service content -->
+    <string name="Foreground_service_content">Program is running</string>
+
+    <!-- Need to check https://stackoverflow.com/questions/3235131/set-textview-text-from-html-formatted-string-resource-in-xml -->
+
+    <string-array name="RingQuestion">
+        <!--        <item>You can configure up to 3 alarms simultaneously:</item>  -->
+        <item>Warn me half-way through cooking</item>
+        <item>Warn me that (...) remain</item>
+        <item>Warn me when the temperature exceeds...</item>
+        <item>Baste in (...)</item>
+        <item>Turn in (...)</item>
+        <item>Add (...) in (...)</item>
+        <item>Open in (...)</item>
+        <item>Close in (...)</item>
+        <!--       <item>Remind me to prepare... in...</item>  -->
+        <item>Remind me to (...) in (...)</item>
+        <item>Personalize</item>
+    </string-array>
+
+    <string-array name="RingQuestion2">
+        <!--        <item>You can configure up to 3 alarms simultaneously:</item>  -->
+        <item>Warn me half-way through cooking</item>
+        <item>Warn me that remain</item>
+        <item>Warn me when the temperature exceeds...</item>
+        <item>Baste in </item>
+        <item>Turn in </item>
+        <item>Add in </item>
+        <item>Open in </item>
+        <item>Close in </item>
+        <!--       <item>Remind me to prepare... in...</item>  -->
+        <item>Remind me to in </item>
+        <item>Personalize</item>
+    </string-array>
+
+    <string-array name="Cut_beef">
+        <item>Sirloin</item>
+        <item>Oyster steak</item>
+        <item>Flank steak</item>
+        <item>Chateaubriand</item>
+        <item>Ribs</item>           <!-- 5 -->
+        <item>Bone-in ribeye steak</item>
+        <item>Sirloin steak</item>
+        <item>Tenderloin</item>
+        <item>Filet mignon OR short loin</item>
+        <item>Ground</item>         <!-- 10 -->
+        <item>Skirt</item>
+        <item>Shank</item>
+        <item>Shoulder OR chuck</item>
+        <item>Medallions</item>
+        <item>Round</item>          <!-- 15 -->
+        <item>Hanger steak</item>
+        <item>Brisket</item>
+        <item>Roast</item>
+        <item>Rumpsteak</item>
+        <item>Steak</item>          <!-- 20 -->
+        <item>Sirloin tip</item>
+        <item>T-bone OR porterhouse</item>
+        <item>Tournedos</item>
+        <item>Skip</item>          <!-- 24 -->
+    </string-array>
+
+    <string-array name="Cut_Veal">
+        <item>Neck</item>
+        <item>Ribs</item>
+        <item>Tenderloin</item>
+        <item>Loin</item>
+        <item>Topside</item>       <!-- 5 -->
+        <item>Silverside</item>
+        <item>Flank</item>
+        <item>Breast</item>
+        <item>Shoulder</item>
+        <item>Shank</item> <!-- 10 -->
+        <item>Roast</item>
+        <item>Skip</item>
+    </string-array>
+
+
+    <string-array name="Cut_Lamb">
+        <item>Rack</item>
+        <item>Chops</item>
+        <item>Shoulder</item>
+        <item>Minced</item>
+        <item>Leg</item>       <!-- 5 -->
+        <item>Ground</item>
+        <item>Shank</item>
+        <item>Loin</item>
+        <item>Rib roast</item>
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="Cut_Pork">
+        <item>Rack</item>
+        <item>Chops</item>
+        <item>Shoulder</item>
+        <item>Tenderloin</item>
+        <item>Minced</item>       <!-- 5 -->
+        <item>Ground</item>
+        <item>Loin</item>
+        <item>Belly</item>
+        <item>Back ribs</item>
+        <item>Roast</item>  <!-- 10 -->
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="Cut_Turkey">
+        <item>Breast OR white meat</item>
+        <item>Whole turkey</item>
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="Cut_Chicken">
+        <item>Breast OR white meat</item>
+        <item>Thigh</item>
+        <item>Whole chicken</item>
+        <item>Capon</item>
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="Cut_Duck">
+        <item>Whole duck</item>
+        <item>Magret OR Breast</item>
+        <item>foie gras</item>
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="Cut_Fish">
+        <item>(Sea)bass</item>
+        <item>Swordfish</item>
+        <item>Halibut</item>
+        <item>Whole fish</item>
+        <item>Salmon</item>       <!-- 5 -->
+        <item>Tuna</item>
+        <item>Red snapper</item>
+        <item>John Dory</item>
+        <item>Turbot</item>
+        <item>Grouper</item>  <!-- 10 -->
+        <item>Cod</item>  <!-- 11 -->
+        <item>Skip</item>
+    </string-array>
+
+    <string name="tools_charcoal_bbq">Charcoal BBQ</string>
+    <string name="tools_gas_electric_bbq">Gas and electric BBQ</string>
+    <string name="tools_o_plancha">O\'Plancha</string>
+    <string name="tools_pan">Pan</string>
+    <string name="tools_oven">Oven</string>
+    <string name="tools_smoker">Smoker</string>
+    <string name="tools_rotisserie">Rotisserie</string>
+    <string name="tools_griddle">Griddle</string>
+    <string name="tools_steam_oven">Steam oven</string>
+
+    <string-array name="QandA_Q">
+        <item>Do I have to pay for the application? </item>
+        <item>May I use another app while using meat°it?</item>
+        <item>When will my probe send me an alert?</item>
+        <item>What devices can I use meat°it with?</item>
+        <item>Will I be alerted when the meat needs turning?  </item>
+        <item>Will my probe work when using an induction stove?</item>
+        <item>Can I use meat°it in the microwave?</item>
+        <item>Can I use meat°it with an oven/BBQ when closed?</item>
+        <item>What should I do if the probe is not detected?</item>
+        <item>What should I do if probe is out of range?</item>
+        <item>Can I put the probe in the dishwasher?</item>
+        <item>How should I clean my probe? </item>
+        <item>How long does it take to charge my probe? </item>
+        <item>How long will my probe work without charging?</item>
+        <item>How should I switch off my probe?</item>
+        <item>How long is my probe under warranty? </item>
+        <item>Which version of iOS, Android OS and Bluetooth should I have to use the meat°it app?</item>
+        <item>Recommendations for improving Bluetooth range?</item>
+        <item>As an Android OS user, the application asked me to activate my location service. Why?</item>
+        <item>How do I change the temperature system on my application?</item>
+        <item>How high a temperature can meat°it resist?\nDoes the probe resist open flames?</item>
+        <item>Are recipes provided? Where I can I find them? </item>
+        <item>My cut of meat is not shown. What shall I do?</item>
+        <item>Can I set a personalized temperature?</item>
+        <item>Up to what internal temperature can I use meat°it? What happens if it goes beyond 212°F/100°C?</item>
+        <item>Aren’t ovens and BBQs a kind of Faraday cage, impervious to electromagnetic radio waves?</item>
+        <item>What does “organoleptic” mean?</item>
+        <item>Can I use meat°it to cook in oil?</item>
+        <item>Can I use meat°it for steam cooking?</item>
+        <item>Can I use meat°it for sous-vide cooking?</item>
+        <item>Can I use meat°it in a pressure cooker?</item>
+        <item>Why can’t I use meat°it to calculate the surface temperature of my cooking device?</item>
+        <item>Why is the time remaining not displayed?</item>
+        <item>If left on its base a long time without being used, will the probe’s lifespan be reduced?</item>
+        <item>My meat°it probe will no longer charge. What shall I do?</item>
+        <item>Why does meat°it not indicate the ambient temperature?</item>
+        <item>How can I delete a line in the history?</item>
+        <item>What is the icon that sometimes appears on the upper left of my screen?</item>
+        <item>What is the character limit for a cooking commentary?</item>
+        <item>I am connected to wifi but the function keys have disappeared. Is this normal?</item>
+        <item>My probe gives me the wrong temperature scale. What’s going on?</item>
+        <item>I contacted Customer Service but still haven’t received an answer. Have you forgotten me?</item>
+        <item>If none of these questions resolve your problem, contact us! meatit@mastrad.fr</item>
+    </string-array>
+
+    <string-array name="QandA_A">
+        <item>No, it will always be free of charge. It will, however continue to develop over time to always give you the best experience possible!</item>
+        <item>Of course! Meat°it will continue to send you alerts/notifications even when working in the background.</item>
+        <item>Your meat°it probe alerts you: In the event of under-cooking (slow cooking), over-cooking (fast cooking), danger, when the food is ready as well as when you have programmed alerts. Bon appétit!</item>
+        <item>You can use meat°it with devices such as: Coal or gas BBQ, the Mastrad O’Plancha, frying pan, steam oven, smoker, rotisserie, plancha grill and oven. Any other use is not recommended.</item>
+        <item>No, because everyone has a different preference and we cannot decide that for you. You can however program a timer. You can also configure your own alerts. To do so, click the icon shaped like a “Bell” in Cooking control™; you can choose among the recommended alerts or personalize your own. For example: Remind me to turn the steak in 10’.</item>
+        <item>Yes, it also works with an induction stove.</item>
+        <item>No, absolutely not! Any use with a microwave is strictly proscribed by mastrad. You will cause irreversible damage to both your probe and your microwave.</item>
+        <item>Yes. You should however know that ovens and closed BBQs act as “semi” Faraday cages and will affect the signal range. In order to maintain the range, do not move your telephone/tablet any further than 16.5 feet/5 meters from the probe. Or use the wifi extension.</item>
+        <item>Make sure that Bluetooth is activated on your telephone. If your probe is not detected when inserted into your meat/fish, remove it using the probe extractor. Activate your probe using the docking station as indicated in the Quick Start Guide: “"Activate your meat°it probe by briefly placing the black part of the probe in the central section of the docking station. Take it out; it should be activated.”  If this does not work, leave your probe to charge for at least 15 minutes. If the problem persists, contact Customer Service: meatit@mastrad.fr</item>
+        <item>If the probe is out of range, an audible and visual signal will warn you. Bring the probe closer so that the app can automatically reconnect. </item>
+        <item>No, absolutely not! You will totally destroy the probe and that would be a shame...</item>
+        <item>It can easily be cleaned under running water but do not immerse it; dry with a soft cloth. The docking station can be cleaned with a soft, dry cloth. </item>
+        <item>For total charge, you should plan on 2 hours. A 15-min charge will allow cooking time for up to 30 minutes. A green light will indicate when the probe is completely charged. Your probe will automatically switch off after 30 minutes of inactivity in order to preserve battery life.</item>
+        <item>Your probe offers more than 24 hours of use. </item>
+        <item>Your probe automatically switches off after 30 minutes of inactivity.</item>
+        <item>Your meat°it cooking probe is guaranteed for 2 years (1 year in the US) but we would be happy if you keep using it ;).</item>
+        <item>iOS version 9.1 or later.\nAndroid version 5.0 or later.\nBluetooth 4.0 or higher.</item>
+        <item>The best solution is to use the wifi extension. If that is impossible, you can try holding your telephone/tablet in a vertical position (or place it in a dock). This will give better results than laying it flat on a table or keeping it in your pocket. Also avoid laying your telephone/tablet on a metal surface. A well-charged probe transmits better than a little-charged one; avoid using meat°it when it is not fully charged ;). Finally, you should know that your probe transmits its Bluetooth signal from all of the black ceramic part and not only from the upper portion. You should thus ensure that the ceramic end piece is not totally covered and position your phone towards this piece in order to get the best results!</item>
+        <item>Because this is how the Android operating system is designed. It helps the system to detect and pair with your probe. But don’t worry, Mastrad does not use or even record your position under any circumstances.</item>
+        <item>In order to go from Celsius to Fahrenheit and vice-versa, go to the “Unit” tab in “Settings” and choose the one you prefer.</item>
+        <item>The quality of the meat°it engineering means that it can resist internal temperatures up to 212°F/100°C. As for ambient temperature, meat°it resists up to 572°F/300°C, which corresponds to the usual highest ambient cooking temperature. Moreover, the meat°it probe resists up to 3 minutes when in contact with open flame, in other words, a temperature of approximately 1270°F/700°C. An audible and visual alert will indicate when the probe is at risk. </item>
+        <item>Some recipes are available at: www.mastrad-paris.fr/recipes or on the dedicated site: www.meat-it.co. We will add to these recipes over time. You can send us your own recipes and receive special deals! meatit@mastrad.fr</item>
+        <item>Mea culpa! We tried to think of everything... You can “skip” this step at the bottom of the list; our algorithm will calculate the optimal cooking time depending on the type of meat you have selected. Send us an email and we’ll take care of the problem!</item>
+        <item>Yes, you can set your own personal temperature. At each step, a “personalized” button is available to let you configure your cooking as you like.</item>
+        <item>The quality of the meat°it engineering means that it can resist internal temperatures up to 212°F/100°C. Your meat, however, will probably be inedible if the core temperature goes beyond 195°F/90°C....</item>
+        <item>An efficient Faraday cage cannot have any hole if it is to be impervious to electromagnetic radio waves. Fortunately, ovens and barbecues are not built to be Faraday cages; they have many holes, plastic joints, ventilation systems, etc.\nNonetheless, concrete walls or metal linings can affect the Bluetooth signal. The quality of your signal is beyond our control; it depends on the structure of your home. "</item>
+        <item>People may mention organoleptic quality when talking about stimuli belonging to the senses such as flavor, taste, smell. </item>
+        <item>No, meat°it is not manufactured to be put in contact with liquids.</item>
+        <item>Yes, meat°it resists humidity; your probe will function as long as it is not immersed in a liquid.</item>
+        <item>We don’t recommend using meat°it for sous-vide cooking as the probe is not made to be immersed in liquid.</item>
+        <item>No, the pressure and humidity are much too high.</item>
+        <item>Since you ask: one of the meat°it secrets lies in the fact that it is the coolness of the meat that cools down the probe and its components and that allows it to resist such high temperatures. Imagine direct contact with a BBQ at 480°F/250°C....</item>
+        <item>The remaining time depends on the target temperature and on the meat temperature. For example, if the target temperature is 140°F/60°C, the remaining time will only show around 90°F/32°C. Before that temperature, the meat has not cooked long enough to calculate the cooking rate and thus the time remaining.</item>
+        <item>No, your probe will stop charging once the battery reaches 100%.</item>
+        <item>After several uses, the various metal parts may become covered in meat or grease. Make sure to clean them before charging your probe.</item>
+        <item>Because it serves no real purpose and because ovens and BBQs already show this information. We have gone one better: Cooking control™ calculates the cooking rate!</item>
+        <item>Slide towards the left to delete a line in the history.</item>
+        <item>That is the Cooking control™ shortcut! Click it and it will automatically take you to the last Cooking control™ that you viewed.</item>
+        <item>None! You can even copy/paste your favorite recipes from the Net. And we have planned something even better between now and summer of 2019...</item>
+        <item>Don’t worry! If you are connected to wifi, the second telephone is in “read-only” mode, you can only read the cooking information. Want to change something? Use your first telephone!</item>
+        <item>Setting up the probe is important for correct meat temperature readings.\n- Make sure you insert the metallic part completely and do not cover the black part of the probe, either with the meat or with parchment paper\n- Do not put the cooking dish with the probe too close to the sides of your device (at least 2 inches/5 cm).</item>
+        <item>Never! Some problems may take more time than others but, in any case, we promise to get back to you.</item>
+        <item></item>
+    </string-array>
+
+    <!-- V2 Fish update -->
+    <string name="food_fish_teach_title">HOW TO INSERT YOUR PROBE: FISH?</string>
+    <string name="food_fish_teach_content1">Fully insert the metal part of your probe into the thickest and densest part of the fish.</string>
+    <string name="food_fish_teach_content2">Be careful to prevent any air from entering so that the probe is fully covered by the flesh.</string>
+
+    <!-- V2 ProbeList connect -->
+    <string name="probelist_connect">" Connect "</string>
 </resources>
