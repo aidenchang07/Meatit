@@ -71,6 +71,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <!--
+            layout_width: 寬度大小
+            layout_height: 高度大小
+            layout_marginStart: 左邊間距(不建議使用layout_marginLeft)
+            layout_marginEnd: 右邊間距(不建議使用layout_marginRight)
+            button="@null": 隱藏RadioButton
+        -->
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="17dp"
