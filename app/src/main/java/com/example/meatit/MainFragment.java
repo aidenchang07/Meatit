@@ -22,6 +22,11 @@ import android.widget.RadioButton;
 public class MainFragment extends Fragment {
 
     private RadioButton radioButton;
+    private RadioButton radioButton2;
+    private RadioButton radioButton3;
+    private RadioButton radioButton4;
+    private RadioButton radioButton5;
+    private RadioButton radioButton6;
 
     public MainFragment() {
         // Required empty public constructor
@@ -41,16 +46,32 @@ public class MainFragment extends Fragment {
         Button goToAccountBtn = view.findViewById(R.id.goToAccountBtn);
         goToAccountBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toAccountFragment));
 
-//        setRadioButtonImg();
+        radioButton = view.findViewById(R.id.radioButton);
+        radioButton2 = view.findViewById(R.id.radioButton2);
+        radioButton3 = view.findViewById(R.id.radioButton3);
+        radioButton4 = view.findViewById(R.id.radioButton4);
+        radioButton5 = view.findViewById(R.id.radioButton5);
+        radioButton6 = view.findViewById(R.id.radioButton6);
+
+
+        setRadioButtonImg();
 
     }
 
 
-//    private void setRadioButtonImg() {
-//        Drawable First = getResources().getDrawable(R.drawable.img_circle_white);
-//        First.setBounds(0, 0,40 ,40);//参数从左到右依次是距左右边距离，距上下边距离，图片长度,图片宽度
-//        radioButton.setCompoundDrawables(First, null, null, null);//mainData.rgMainListenbook是控件id
-//
-//    }
+    private void setRadioButtonImg() {
+        Drawable radioButtonDrawable = getResources().getDrawable(R.drawable.radiobutton_intro);
+
+        radioButtonDrawable.setBounds(0, 0,70 ,70);//参数从左到右依次是距左右边距离，距上下边距离，图片长度,图片宽度
+
+//        radioButton.setCompoundDrawables(radioButtonDrawable, null, null, null);
+//        radioButton2.setCompoundDrawables(radioButtonDrawable, null, null, null);
+//        radioButton3.setCompoundDrawables(radioButtonDrawable, null, null, null);
+//        radioButton4.setCompoundDrawables(radioButtonDrawable, null, null, null);
+//        radioButton5.setCompoundDrawables(radioButtonDrawable, null, null, null);
+//        radioButton6.setCompoundDrawables(radioButtonDrawable, null, null, null);
+
+//        radioButton.setButtonDrawable(First);
+    }
 
 }
