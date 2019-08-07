@@ -24,11 +24,11 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                //等待2秒，開啟導覽頁
+                //等待1秒，開啟導覽頁
                 Intent introActivityIntent = new Intent(WelcomeActivity.this, IntroActivity.class);
                 startActivity(introActivityIntent);
 
-            }}, 2000);
+            }}, 1000);
 
     }
 }
