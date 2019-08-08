@@ -29,6 +29,7 @@ public class IntroActivity extends AppCompatActivity {
         final ViewPager vpPager = findViewById(R.id.viewPager);
         adapterViewPager = new ViewPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(adapterViewPager);
+        vpPager.setPageTransformer(true, new DepthPageTransformer());
         vpPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
