@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    private static int NUM_ITEMS = 3;
+    private static int NUM_ITEMS = 6;
 
     public ViewPagerAdapter(FragmentManager fragmentManager){
         super(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
@@ -29,6 +29,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return Intro2Fragment.newInstance();
             case 2:
                 return Intro3Fragment.newInstance();
+            case 3:
+                return Intro4Fragment.newInstance();
+            case 4:
+                return Intro5Fragment.newInstance();
+            case 5:
+                return Intro6Fragment.newInstance();
             default:
                 return null;
         }

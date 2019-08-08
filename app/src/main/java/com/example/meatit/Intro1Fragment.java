@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
 
 
 /**
@@ -25,6 +26,7 @@ public class Intro1Fragment extends Fragment {
                              Bundle savedInstanceState) {
 //        return inflater.inflate(R.layout.fragment_intro1, container, false);
         View view = inflater.inflate(R.layout.fragment_intro1, container, false);
+//        radioButton = view.findViewById(R.id.radioButton);
         return view;
     }
 
@@ -33,6 +35,8 @@ public class Intro1Fragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 //        Button goToAccountBtn = view.findViewById(R.id.goToAccountBtn);
 //        goToAccountBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toAccountFragment));
+//        RadioButton radioButton = view.findViewById(R.id.radioButton);
+//        radioButton.setChecked(true);
     }
 
     public static Intro1Fragment newInstance() {
