@@ -13,10 +13,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AccountFragment extends Fragment {
+public class Intro3Fragment extends Fragment {
 
 
-    public AccountFragment() {
+    public Intro3Fragment() {
         // Required empty public constructor
     }
 
@@ -24,8 +24,14 @@ public class AccountFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account, container, false);
+//        return inflater.inflate(R.layout.fragment_intro3, container, false);
+        View view = inflater.inflate(R.layout.fragment_intro3, container, false);
+        return view;
+    }
+
+    public static Intro3Fragment newInstance() {
+        Intro3Fragment fragment = new Intro3Fragment();
+        return fragment;
     }
 
 }
