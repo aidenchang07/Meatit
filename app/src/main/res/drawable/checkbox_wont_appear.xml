@@ -2,9 +2,9 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- 選中後圖示 -->
     <item android:state_checked="true"
-          android:drawable="@drawable/img_circle_white_2" />
+          android:drawable="@drawable/ic_wont_appear_2" />
     <!-- 未選中圖示 -->
     <item android:state_checked="false"
-          android:drawable="@drawable/img_circle_white" />
-    <item android:drawable="@drawable/img_circle_white" /> <!-- default state -->
+          android:drawable="@drawable/ic_wont_appear_1" />
+    <item android:drawable="@drawable/ic_wont_appear_1" /> <!-- default state -->
 </selector>
