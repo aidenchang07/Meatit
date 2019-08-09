@@ -8,13 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RadioButton;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Intro1Fragment extends Fragment {
+public class Intro1Fragment extends Fragment implements View.OnClickListener {
+
+    private Button closeBtn;
 
     public Intro1Fragment() {
         // Required empty public constructor
@@ -26,22 +29,41 @@ public class Intro1Fragment extends Fragment {
                              Bundle savedInstanceState) {
 //        return inflater.inflate(R.layout.fragment_intro1, container, false);
         View view = inflater.inflate(R.layout.fragment_intro1, container, false);
-//        radioButton = view.findViewById(R.id.radioButton);
         return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        Button goToAccountBtn = view.findViewById(R.id.goToAccountBtn);
-//        goToAccountBtn.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.toAccountFragment));
-//        RadioButton radioButton = view.findViewById(R.id.radioButton);
-//        radioButton.setChecked(true);
+        getView(view);
+        setListener();
+//        closeBtn = view.findViewById(R.id.button);
+//        closeBtn.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        getActivity().finish();
+    }
+
+    private void getView(View view) {
+        closeBtn = getViewById(view, R.id.button);
+    }
+
+    private void setListener() {
+        setOnClickListener(closeBtn);
+    }
+
+    private Button getViewById(View view, int id) {
+        return view.findViewById(id);
+    }
+
+    private void setOnClickListener(Button button) {
+        button.setOnClickListener(this);
     }
 
     public static Intro1Fragment newInstance() {
         Intro1Fragment fragment = new Intro1Fragment();
         return fragment;
     }
-
 }

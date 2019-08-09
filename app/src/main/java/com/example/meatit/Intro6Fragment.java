@@ -17,21 +17,51 @@ import android.widget.Button;
  */
 public class Intro6Fragment extends Fragment implements View.OnClickListener {
 
-    private Button gotitBtn;
+    private Button gotItBtn;
+    private Button closeBtn;
+    private int viewID;
 
     public Intro6Fragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 //        return inflater.inflate(R.layout.fragment_intro6, container, false);
         View view = inflater.inflate(R.layout.fragment_intro6, container, false);
-        gotitBtn = view.findViewById(R.id.button_gotit);
-        gotitBtn.setOnClickListener(this);
+        getView(view);
+        setListener();
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+        viewID = view.getId();
+        if (viewID == R.id.button_gotit) {
+            Intent loginActivityIntent = new Intent(getActivity(), LoginActivity.class);
+            startActivity(loginActivityIntent);
+        } else if (viewID == R.id.button6) {
+            getActivity().finish();
+        }
+    }
+
+    private void setListener() {
+        setOnClickListener(gotItBtn);
+        setOnClickListener(closeBtn);
+    }
+
+    private void setOnClickListener(Button button) {
+        button.setOnClickListener(this);
+    }
+
+    private void getView(View view) {
+        gotItBtn = getViewById(view, R.id.button_gotit);
+        closeBtn = getViewById(view, R.id.button6);
+    }
+
+    private Button getViewById(View view, int id) {
+        return view.findViewById(id);
     }
 
     public static Intro6Fragment newInstance() {
@@ -39,9 +69,6 @@ public class Intro6Fragment extends Fragment implements View.OnClickListener {
         return fragment;
     }
 
-    @Override
-    public void onClick(View view) {
-        Intent loginActivityIntent = new Intent(getActivity(), LoginActivity.class);
-        startActivity(loginActivityIntent);
-    }
+
+
 }

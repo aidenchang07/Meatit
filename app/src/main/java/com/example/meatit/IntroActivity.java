@@ -10,32 +10,35 @@ import android.widget.RadioGroup;
 
 public class IntroActivity extends AppCompatActivity {
 
-    FragmentPagerAdapter adapterViewPager;
+    private ViewPager viewPager;
+    private FragmentPagerAdapter adapterViewPager;
+
+    private RadioButton radioButton;
+    private RadioButton radioButton2;
+    private RadioButton radioButton3;
+    private RadioButton radioButton4;
+    private RadioButton radioButton5;
+    private RadioButton radioButton6;
+    private RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
-        final RadioGroup radioGroup = findViewById(R.id.radioGroup);
-        final RadioButton radioButton = findViewById(R.id.radioButton);
-        final RadioButton radioButton2 = findViewById(R.id.radioButton2);
-        final RadioButton radioButton3 = findViewById(R.id.radioButton3);
-        final RadioButton radioButton4 = findViewById(R.id.radioButton4);
-        final RadioButton radioButton5 = findViewById(R.id.radioButton5);
-        final RadioButton radioButton6 = findViewById(R.id.radioButton6);
+        getView();
         radioButton.setChecked(true);
 
-        final ViewPager vpPager = findViewById(R.id.viewPager);
         adapterViewPager = new ViewPagerAdapter(getSupportFragmentManager());
-        vpPager.setAdapter(adapterViewPager);
-        vpPager.setPageTransformer(true, new DepthPageTransformer());
-        vpPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        viewPager.setAdapter(adapterViewPager);
+        viewPager.setPageTransformer(true, new DepthPageTransformer());
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
 
+            //滑到該頁面，即選中該圓圈
             @Override
             public void onPageSelected(int position) {
                 if (position == 0){
@@ -60,25 +63,36 @@ public class IntroActivity extends AppCompatActivity {
 
             }
         });
-
+        //點底下圓圈即跳轉該頁面
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int checkedID) {
                 if (checkedID == radioButton.getId()){
-                    vpPager.setCurrentItem(0);
+                    viewPager.setCurrentItem(0);
                 } else if (checkedID == radioButton2.getId()){
-                    vpPager.setCurrentItem(1);
+                    viewPager.setCurrentItem(1);
                 }else if (checkedID == radioButton3.getId()){
-                    vpPager.setCurrentItem(2);
+                    viewPager.setCurrentItem(2);
                 }else if (checkedID == radioButton4.getId()){
-                    vpPager.setCurrentItem(3);
+                    viewPager.setCurrentItem(3);
                 }else if (checkedID == radioButton5.getId()){
-                    vpPager.setCurrentItem(4);
+                    viewPager.setCurrentItem(4);
                 }else if (checkedID == radioButton6.getId()){
-                    vpPager.setCurrentItem(5);
+                    viewPager.setCurrentItem(5);
                 }
             }
         });
 
+    }
+
+    private void getView(){
+        viewPager = findViewById(R.id.viewPager);
+        radioGroup = findViewById(R.id.radioGroup);
+        radioButton = findViewById(R.id.radioButton);
+        radioButton2 = findViewById(R.id.radioButton2);
+        radioButton3 = findViewById(R.id.radioButton3);
+        radioButton4 = findViewById(R.id.radioButton4);
+        radioButton5 = findViewById(R.id.radioButton5);
+        radioButton6 = findViewById(R.id.radioButton6);
     }
 }
