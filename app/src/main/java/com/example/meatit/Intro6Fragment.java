@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 
 /**
@@ -17,9 +18,11 @@ import android.widget.Button;
  */
 public class Intro6Fragment extends Fragment implements View.OnClickListener {
 
+    private int viewID;
     private Button gotItBtn;
     private Button closeBtn;
-    private int viewID;
+    private CheckBox dtsChBox;
+    private CheckBox dtsChBox2;
 
     public Intro6Fragment() {
         // Required empty public constructor
@@ -30,8 +33,15 @@ public class Intro6Fragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
 //        return inflater.inflate(R.layout.fragment_intro6, container, false);
         View view = inflater.inflate(R.layout.fragment_intro6, container, false);
+        //for button
         getView(view);
         setListener();
+        //for checkbox
+        dtsChBox = view.findViewById(R.id.checkBox);
+        dtsChBox2 = view.findViewById(R.id.checkBox2);
+        dtsChBox.setOnClickListener(this);
+        dtsChBox2.setOnClickListener(this);
+
         return view;
     }
 
@@ -43,6 +53,14 @@ public class Intro6Fragment extends Fragment implements View.OnClickListener {
             startActivity(loginActivityIntent);
         } else if (viewID == R.id.button6) {
             getActivity().finish();
+        } else if (viewID == R.id.checkBox2) {
+            if (!dtsChBox.isChecked()) {
+                dtsChBox.setChecked(true);
+            } else {
+                dtsChBox.setChecked(false);
+            }
+        } else {
+            //nothing
         }
     }
 
