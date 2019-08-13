@@ -16,7 +16,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_creatmyaccount"
-        android:text="@string/login_login"
+        android:text="@string/trouble_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="3:1"
         app:layout_constraintEnd_toEndOf="parent"

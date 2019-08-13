@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".TroubleShootingActivity"></activity>
+        <activity android:name=".MeatResultActivity"></activity>
+        <activity android:name=".AnimalSettingActivity" />
+        <activity android:name=".CookSettingActivity" />
+        <activity android:name=".DevicesAvailableActivity" />
+        <activity android:name=".TroubleShootingActivity" />
         <activity android:name=".SearchActivity" />
         <activity
             android:name=".CreateAccountActivity"
