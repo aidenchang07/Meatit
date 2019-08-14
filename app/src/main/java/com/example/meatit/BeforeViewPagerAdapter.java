@@ -5,17 +5,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class BeforeViewPagerAdapter extends FragmentPagerAdapter {
 
     private static int NUM_ITEMS = 6;
 
-    public ViewPagerAdapter(FragmentManager fragmentManager){
+    public BeforeViewPagerAdapter(FragmentManager fragmentManager){
         super(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-    }
-
-    @Override
-    public int getCount() {
-        return NUM_ITEMS;
     }
 
     @NonNull
@@ -39,6 +34,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return null;
         }
 
+    }
+
+    @Override
+    public int getCount() {
+        return NUM_ITEMS;
     }
 
 }

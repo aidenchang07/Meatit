@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class IntroActivity extends AppCompatActivity {
+public class BeforeIntroActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private FragmentPagerAdapter adapterViewPager;
@@ -24,12 +24,12 @@ public class IntroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(R.layout.activity_intro_before);
 
         getView();
         radioButton.setChecked(true);
 
-        adapterViewPager = new ViewPagerAdapter(getSupportFragmentManager());
+        adapterViewPager = new BeforeViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapterViewPager);
         viewPager.setPageTransformer(true, new DepthPageTransformer());
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

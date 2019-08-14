@@ -1,14 +1,17 @@
 package com.example.meatit;
 
 
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.core.widget.TextViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 /**
@@ -29,6 +32,7 @@ public class Intro4Fragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.fragment_intro4, container, false);
         getView(view);
         setListener();
+
         return view;
     }
 

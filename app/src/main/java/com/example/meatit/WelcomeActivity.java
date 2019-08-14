@@ -24,9 +24,9 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                //等待1秒，開啟導覽頁
-                Intent introActivityIntent = new Intent(WelcomeActivity.this, IntroActivity.class);
-                startActivity(introActivityIntent);
+                //等待1秒，開啟選擇探針頁面
+                Intent chooseActivityIntent = new Intent(WelcomeActivity.this, ChooseActivity.class);
+                startActivity(chooseActivityIntent);
 
             }}, 1000);
 
