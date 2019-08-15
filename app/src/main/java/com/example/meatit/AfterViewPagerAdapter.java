@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class AfterViewPagerAdapter extends FragmentPagerAdapter {
 
-    private static int NUM_ITEMS = 6;
+    private static int NUM_ITEMS = 2;
 
     public AfterViewPagerAdapter(FragmentManager fragmentManager){
         super(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
@@ -18,17 +18,17 @@ public class AfterViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-//                return Intro1Fragment.newInstance();
+                return AfterIntro1Fragment.newInstance();
             case 1:
-//                return Intro2Fragment.newInstance();
+                return AfterIntro2Fragment.newInstance();
             case 2:
-//                return Intro3Fragment.newInstance();
+//                return AfterIntro3Fragment.newInstance();
             case 3:
-//                return Intro4Fragment.newInstance();
+//                return AfterIntro4Fragment.newInstance();
             case 4:
-//                return Intro5Fragment.newInstance();
+//                return AfterIntro5Fragment.newInstance();
             case 5:
-//                return Intro6Fragment.newInstance();
+//                return AfterIntro6Fragment.newInstance();
             default:
                 return null;
         }

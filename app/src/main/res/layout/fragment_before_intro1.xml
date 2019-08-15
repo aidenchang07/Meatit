@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".Intro1Fragment">
+    tools:context=".BeforeIntro1Fragment">
 
     <!--
     背景白色

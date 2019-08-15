@@ -6,7 +6,6 @@
     <color name="colorPurple">#664D84</color>
     <color name="colorPink">#F26A78</color>
 
-    <!--
-    <color name="colorWhite">#FFFFFF</color>
-    -->
+    <!--new intro-->
+    <color name="colorDeepBlue">#22252D</color>
 </resources>

@@ -1,35 +1,32 @@
 package com.example.meatit;
 
 
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.core.widget.TextViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Intro4Fragment extends Fragment implements View.OnClickListener {
+public class BeforeIntro4Fragment extends Fragment implements View.OnClickListener {
 
     private Button closeBtn;
 
-    public Intro4Fragment() {
+    public BeforeIntro4Fragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-//        return inflater.inflate(R.layout.fragment_intro4, container, false);
-        View view = inflater.inflate(R.layout.fragment_intro4, container, false);
+//        return inflater.inflate(R.layout.fragment_before_intro4, container, false);
+        View view = inflater.inflate(R.layout.fragment_before_intro4, container, false);
         getView(view);
         setListener();
 
@@ -57,8 +54,8 @@ public class Intro4Fragment extends Fragment implements View.OnClickListener {
         getActivity().finish();
     }
 
-    public static Intro4Fragment newInstance() {
-        Intro4Fragment fragment = new Intro4Fragment();
+    public static BeforeIntro4Fragment newInstance() {
+        BeforeIntro4Fragment fragment = new BeforeIntro4Fragment();
         return fragment;
     }
 

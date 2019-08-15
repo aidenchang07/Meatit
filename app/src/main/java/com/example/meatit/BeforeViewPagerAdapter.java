@@ -19,17 +19,17 @@ public class BeforeViewPagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                return Intro1Fragment.newInstance();
+                return BeforeIntro1Fragment.newInstance();
             case 1:
-                return Intro2Fragment.newInstance();
+                return BeforeIntro2Fragment.newInstance();
             case 2:
-                return Intro3Fragment.newInstance();
+                return BeforeIntro3Fragment.newInstance();
             case 3:
-                return Intro4Fragment.newInstance();
+                return BeforeIntro4Fragment.newInstance();
             case 4:
-                return Intro5Fragment.newInstance();
+                return BeforeIntro5Fragment.newInstance();
             case 5:
-                return Intro6Fragment.newInstance();
+                return BeforeIntro6Fragment.newInstance();
             default:
                 return null;
         }

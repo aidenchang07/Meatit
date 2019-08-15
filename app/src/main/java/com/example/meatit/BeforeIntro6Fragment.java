@@ -16,7 +16,7 @@ import android.widget.CheckBox;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Intro6Fragment extends Fragment implements View.OnClickListener {
+public class BeforeIntro6Fragment extends Fragment implements View.OnClickListener {
 
     private int viewID;
     private Button gotItBtn;
@@ -24,15 +24,15 @@ public class Intro6Fragment extends Fragment implements View.OnClickListener {
     private CheckBox dtsChBox;
     private CheckBox dtsChBox2;
 
-    public Intro6Fragment() {
+    public BeforeIntro6Fragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-//        return inflater.inflate(R.layout.fragment_intro6, container, false);
-        View view = inflater.inflate(R.layout.fragment_intro6, container, false);
+//        return inflater.inflate(R.layout.fragment_before_intro6, container, false);
+        View view = inflater.inflate(R.layout.fragment_before_intro6, container, false);
         //for button
         getView(view);
         setListener();
@@ -82,8 +82,8 @@ public class Intro6Fragment extends Fragment implements View.OnClickListener {
         return view.findViewById(id);
     }
 
-    public static Intro6Fragment newInstance() {
-        Intro6Fragment fragment = new Intro6Fragment();
+    public static BeforeIntro6Fragment newInstance() {
+        BeforeIntro6Fragment fragment = new BeforeIntro6Fragment();
         return fragment;
     }
 

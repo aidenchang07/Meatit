@@ -24,7 +24,7 @@ public class BeforeIntroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_before);
+        setContentView(R.layout.activity_before_intro);
 
         getView();
         radioButton.setChecked(true);
