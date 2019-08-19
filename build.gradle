@@ -5,7 +5,7 @@ buildscript {
         google()
         jcenter()
 
-        //for gif, 支援Android 4.2+
+        // for gif, 支援Android 4.2+
         mavenCentral()
     }
     dependencies {

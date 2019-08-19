@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "175835261711",
+    "firebase_url": "https://meatit.firebaseio.com",
+    "project_id": "meatit",
+    "storage_bucket": "meatit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175835261711:android:f863685eb17b39db",
+        "android_client_info": {
+          "package_name": "com.example.meatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175835261711-fbe1929jk263oorusl415ih574cniliu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meatit",
+            "certificate_hash": "74e39fda5ab19dacbe451d97dc1d9521d837f479"
+          }
+        },
+        {
+          "client_id": "175835261711-q7nt1ksurkdo0o6sk4hla1n2po9mdrvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDniAOI_-HiPMy87YfioV1PG-5r4yeJP-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175835261711-q7nt1ksurkdo0o6sk4hla1n2po9mdrvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
