@@ -1,15 +1,8 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <!-- NoActionBar theme. -->
-    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -17,6 +10,17 @@
         <!-- 全螢幕導覽頁 -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="colorBackground">@android:color/white</item>
+    </style>
+
+    <!-- Night / Dark Mode theme. -->
+    <style name="DarkTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- 全螢幕導覽頁 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorBackground">#303030</item>
     </style>
 
     <style name="MyEditText" parent="Theme.AppCompat.Light">

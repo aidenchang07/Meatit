@@ -40,6 +40,9 @@ dependencies {
     // for firebase
     implementation 'com.google.firebase:firebase-auth:18.1.0'
 
+    // for dark mode
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

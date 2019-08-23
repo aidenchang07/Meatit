@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.meatit.Util.NightModeSharedPrefUtil;
+import com.example.meatit.Util.ThemeUtil;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -44,6 +46,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ThemeUtil.setTheme(this);
+        if (NightModeSharedPrefUtil.loadNightModeState(this)) {
+            setTheme(R.style.DarkTheme);
+//            Toast.makeText(getApplication(), "hihiDark", Toast.LENGTH_SHORT).show();
+        } else {
+            setTheme(R.style.LightTheme);
+//            Toast.makeText(getApplication(), "hihiLight", Toast.LENGTH_SHORT).show();
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
