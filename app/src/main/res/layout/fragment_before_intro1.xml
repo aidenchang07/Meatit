@@ -7,11 +7,6 @@
     android:background="@android:color/white"
     tools:context=".BeforeIntro1Fragment">
 
-    <!--
-    背景白色
-    android:background="@color/colorWhite"
-    -->
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"

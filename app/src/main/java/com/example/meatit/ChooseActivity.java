@@ -63,7 +63,7 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-        // 非人為按按鍵不觸發
+        // Non-human button press does not trigger
         if(!compoundButton.isPressed()) {
             return;
         }
@@ -72,12 +72,12 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
 //                    getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             NightModeSharedPrefUtil.setNightModeState(this,true);
 //                    Toast.makeText(getApplication(), "hihiYES", Toast.LENGTH_SHORT).show();
-            ThemeUtil.reStartApp(this);
+            ThemeUtil.reCreateOnThread(this);
         }else{
 //                    getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             NightModeSharedPrefUtil.setNightModeState(this,false);
 //                    Toast.makeText(getApplication(), "hihiNO", Toast.LENGTH_SHORT).show();
-            ThemeUtil.reStartApp(this);
+            ThemeUtil.reCreateOnThread(this);
         }
     }
 

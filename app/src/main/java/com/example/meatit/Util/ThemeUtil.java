@@ -14,7 +14,7 @@ public class ThemeUtil {
         activity.setTheme(isLight ? R.style.LightTheme : R.style.DarkTheme);
     }
 
-    public static void reStartApp(@NonNull final Activity activity) {
+    public static void reCreateOnThread(@NonNull final Activity activity) {
         activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {

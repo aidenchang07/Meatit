@@ -23,11 +23,11 @@ public class AfterIntro1Fragment extends Fragment implements View.OnClickListene
 
     private int viewID;
     private int loopCount;
-    private Button button13; //開始播放
-    private Button button15; //暫停播放
-    private Button button16; //設定播放次數
-    private Button button17; //重置
-    private Button button18; //重新播放
+    private Button button13; // Start playing
+    private Button button15; // Pause playback
+    private Button button16; // Set the number of plays
+    private Button button17; // Reset
+    private Button button18; // Replay
     private EditText editText3;
     private GifImageView gifImageView;
     private GifDrawable gifDrawable;
@@ -61,7 +61,7 @@ public class AfterIntro1Fragment extends Fragment implements View.OnClickListene
         return view;
     }
 
-    //回傳物件，供ViewPagerAdapter使用
+    // Return object for use by ViewPagerAdapter
     public static AfterIntro1Fragment newInstance() {
         return new AfterIntro1Fragment();
     }
@@ -70,16 +70,16 @@ public class AfterIntro1Fragment extends Fragment implements View.OnClickListene
     public void onClick(View view) {
         viewID = view.getId();
         if (viewID == R.id.button13) {
-            //開始播放
+            // Start playing
             gifDrawable.start();
         } else if (viewID == R.id.button15) {
-            //暫停播放
+            // Pause playback
             gifDrawable.stop();
         } else if (viewID == R.id.button16) {
             loopCount = Integer.parseInt(editText3.getText().toString());
             gifDrawable.setLoopCount(loopCount);
         } else if (viewID == R.id.button17) {
-            //數值都初始化，才算完全重置
+            // The values are initialized before they are completely reset.
             loopCount = 0;
             editText3.setText("");
             gifDrawable.setLoopCount(loopCount);
