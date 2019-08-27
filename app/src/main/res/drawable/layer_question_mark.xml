@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item>
         <shape android:shape="oval">
-
             <size
                 android:height="8dp"
                 android:width="8dp"/>
@@ -20,7 +18,6 @@
         android:right="1dp">
         <shape android:shape="oval">
             <solid android:color="@android:color/white" />
-
         </shape>
     </item>
     <item
@@ -28,5 +25,5 @@
         android:bottom="3.5dp"
         android:left="3.5dp"
         android:right="3.5dp"
-        android:drawable="@drawable/question_mark"/>
+        android:drawable="@drawable/img_question_mark"/>
 </layer-list>
