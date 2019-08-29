@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class TroubleShootingActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class TroubleShootingActivity extends MeatitAppCompatActivity {
 
     private Button refreshBtn;
 

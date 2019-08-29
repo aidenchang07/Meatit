@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Toast;
 
-public class SearchActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class SearchActivity extends MeatitAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

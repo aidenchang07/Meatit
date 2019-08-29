@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.meatit.Util.MeatitAppCompatActivity;
 import com.example.meatit.Util.NightModeSharedPrefUtil;
 import com.example.meatit.Util.ThemeUtil;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -28,7 +29,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends MeatitAppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "LoginActivity";
     private static final int RC_SIGN_IN = 9001;

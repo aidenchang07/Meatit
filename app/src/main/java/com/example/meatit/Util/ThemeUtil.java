@@ -10,8 +10,8 @@ public class ThemeUtil {
     }
 
     public static void setTheme(@NonNull final Activity activity) {
-        Boolean isLight = NightModeSharedPrefUtil.loadNightModeState(activity);
-        activity.setTheme(isLight ? R.style.LightTheme : R.style.DarkTheme);
+        Boolean isDark = NightModeSharedPrefUtil.loadNightModeState(activity);
+        activity.setTheme(isDark ? R.style.DarkTheme : R.style.LightTheme);
     }
 
     public static void reCreateOnThread(@NonNull final Activity activity) {

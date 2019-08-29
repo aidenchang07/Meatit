@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CreateAccountActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class CreateAccountActivity extends MeatitAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,12 +1,12 @@
 package com.example.meatit;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class WelcomeActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class WelcomeActivity extends MeatitAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

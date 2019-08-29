@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AnimalSettingActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class AnimalSettingActivity extends MeatitAppCompatActivity {
 
     private Button nextBtn;
 

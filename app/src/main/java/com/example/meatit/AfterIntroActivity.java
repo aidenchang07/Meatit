@@ -1,14 +1,13 @@
 package com.example.meatit;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import com.example.meatit.Util.MeatitAppCompatActivity;
 
-public class AfterIntroActivity extends AppCompatActivity {
+public class AfterIntroActivity extends MeatitAppCompatActivity {
 
     private ViewPager viewPager1;
     private FragmentPagerAdapter adapterViewPager;

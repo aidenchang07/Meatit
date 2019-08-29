@@ -7,9 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
 import java.util.ArrayList;
 
-public class MeatResultActivity extends AppCompatActivity {
+public class MeatResultActivity extends MeatitAppCompatActivity {
 
     private MyAdapter myAdapter;
     private RecyclerView recyclerView;

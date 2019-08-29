@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class BeforeIntroActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class BeforeIntroActivity extends MeatitAppCompatActivity {
 
     private ViewPager viewPager;
     private FragmentPagerAdapter adapterViewPager;

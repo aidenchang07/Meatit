@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class DevicesAvailableActivity extends AppCompatActivity {
+import com.example.meatit.Util.MeatitAppCompatActivity;
+
+public class DevicesAvailableActivity extends MeatitAppCompatActivity {
 
     private Button deviceBtn;
 
