@@ -8,37 +8,50 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 
+import com.example.meatit.Util.AnimationUtil;
 import com.example.meatit.Util.MeatitAppCompatActivity;
 import com.example.meatit.Util.NightModeSharedPrefUtil;
 import com.example.meatit.Util.ThemeUtil;
 
 public class ChooseActivity extends MeatitAppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-    static {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-    }
 
     private int viewID;
     private ImageView imageView23;
     private ImageView imageView31;
     private Switch darkModeSw;
-    private boolean mIsNightMode;
+    private AnimationUtil animationUtil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose);
+        init();
+    }
 
+    private void init() {
+        animationUtil = new AnimationUtil();
+
+        findView();
+        setListener();
+
+        // 初始化Switch按鈕
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+            darkModeSw.setChecked(true);
+        } else {
+            darkModeSw.setChecked(false);
+        }
+    }
+
+    private void findView() {
         imageView23 = findViewById(R.id.imageView23);
         imageView31 = findViewById(R.id.imageView31);
+        darkModeSw = findViewById(R.id.sw_dark_mode);
+    }
+
+    private void setListener() {
         imageView23.setOnClickListener(this);
         imageView31.setOnClickListener(this);
-        darkModeSw = findViewById(R.id.sw_dark_mode);
         darkModeSw.setOnCheckedChangeListener(this);
-
-        if (NightModeSharedPrefUtil.loadNightModeState(this)) {
-            darkModeSw.setChecked(true);
-        }
-
     }
 
     @Override
@@ -54,23 +67,25 @@ public class ChooseActivity extends MeatitAppCompatActivity implements View.OnCl
     }
 
     @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+    public void onCheckedChanged(CompoundButton compoundButton, boolean mIsNightMode) {
         // Non-human button press does not trigger
         if(!compoundButton.isPressed()) {
             return;
         }
-        mIsNightMode = b;
+
         if(mIsNightMode){
-//                    getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            NightModeSharedPrefUtil.setNightModeState(this,true);
-//                    Toast.makeText(getApplication(), "hihiYES", Toast.LENGTH_SHORT).show();
-            ThemeUtil.reCreateOnThread(this);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            animationUtil.reCreateByAnimation(ChooseActivity.this);
         }else{
-//                    getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            NightModeSharedPrefUtil.setNightModeState(this,false);
-//                    Toast.makeText(getApplication(), "hihiNO", Toast.LENGTH_SHORT).show();
-            ThemeUtil.reCreateOnThread(this);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            animationUtil.reCreateByAnimation(ChooseActivity.this);
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Save night mode settings before activity closing
+        NightModeSharedPrefUtil.setNightModeState(ChooseActivity.this,AppCompatDelegate.getDefaultNightMode());
+    }
 }

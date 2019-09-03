@@ -47,14 +47,6 @@ public class LoginActivity extends MeatitAppCompatActivity implements View.OnCli
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        ThemeUtil.setTheme(this);
-        if (NightModeSharedPrefUtil.loadNightModeState(this)) {
-            setTheme(R.style.DarkTheme);
-//            Toast.makeText(getApplication(), "hihiDark", Toast.LENGTH_SHORT).show();
-        } else {
-            setTheme(R.style.LightTheme);
-//            Toast.makeText(getApplication(), "hihiLight", Toast.LENGTH_SHORT).show();
-        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.meatit.Util.MeatitAppCompatActivity;
+import com.example.meatit.Util.NightModeSharedPrefUtil;
+import com.example.meatit.Util.ThemeUtil;
 
 public class WelcomeActivity extends MeatitAppCompatActivity {
 
@@ -18,6 +20,8 @@ public class WelcomeActivity extends MeatitAppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        init();
+
         Handler handler = new Handler();
         handler.postDelayed(new Runnable(){
 
@@ -30,5 +34,10 @@ public class WelcomeActivity extends MeatitAppCompatActivity {
 
             }}, 1000);
 
+    }
+
+    private void init() {
+        // 初始化主題
+        ThemeUtil.initTheme(this);
     }
 }

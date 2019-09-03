@@ -9,19 +9,28 @@ import com.example.meatit.Config.ThemeConfig;
 public class NightModeSharedPrefUtil {
 
     public NightModeSharedPrefUtil() {
-//        this.mSharedPref = context.getSharedPreferences("CommonInfo", Context.MODE_PRIVATE);
     }
 
-    public static void setNightModeState(Context context, Boolean state) {
-        SharedPreferences mSharedPref = context.getSharedPreferences(SharedPrefConfig.COMMOM_INFO, Context.MODE_PRIVATE);
+    public static void setNightModeState(Context context, int state) {
+        SharedPreferences mSharedPref = context.getSharedPreferences(SharedPrefConfig.COMMON_INFO, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = mSharedPref.edit();
-        editor.putBoolean(ThemeConfig.DARK_THEME, state);
+        editor.putInt(ThemeConfig.DARK_THEME, state);
         editor.apply();
     }
 
-    public static Boolean loadNightModeState(Context context) {
-        SharedPreferences mSharedPref = context.getSharedPreferences(SharedPrefConfig.COMMOM_INFO, Context.MODE_PRIVATE);
-        return mSharedPref.getBoolean(ThemeConfig.DARK_THEME, false);
+    public static int loadNightModeState(Context context) {
+        SharedPreferences mSharedPref = context.getSharedPreferences(SharedPrefConfig.COMMON_INFO, Context.MODE_PRIVATE);
+        return mSharedPref.getInt(ThemeConfig.DARK_THEME, SharedPrefConfig.NightModeState_LightTheme);
+    }
+
+    public static void removeNightModeState(Context context) {
+        SharedPreferences mSharedPref = context.getSharedPreferences(SharedPrefConfig.COMMON_INFO, Context.MODE_PRIVATE);
+        boolean exists = mSharedPref.contains(ThemeConfig.DARK_THEME);
+        if (exists) {
+            SharedPreferences.Editor editor = mSharedPref.edit();
+            editor.remove(ThemeConfig.DARK_THEME);
+            editor.apply();
+        }
     }
 
 }
