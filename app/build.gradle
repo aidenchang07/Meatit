@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.firebase.crashlytics'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
@@ -40,8 +44,14 @@ dependencies {
     // for firebase
     implementation 'com.google.firebase:firebase-auth:18.1.0'
 
+    // for firebase analytics
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    // for Firebase Crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+
     // for dark mode
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
